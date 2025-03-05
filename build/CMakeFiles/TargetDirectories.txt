@@ -1,0 +1,3 @@
+/home/alan/Documents/RayDrone/build/CMakeFiles/MyRaylibGame.dir
+/home/alan/Documents/RayDrone/build/CMakeFiles/edit_cache.dir
+/home/alan/Documents/RayDrone/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/MyRaylibGame.dir/main.cpp.o CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o -o MyRaylibGame  /usr/local/lib/libraylib.a -L/usr/local/lib -lraylib
