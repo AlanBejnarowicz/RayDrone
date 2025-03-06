@@ -4,11 +4,12 @@
 
 #include <iostream>
 #include <math.h>
-#include <SDL2/SDL.h>
 
 
-#include "../../Tools/MyVector.h"
-#include "../GameObject.h"
+
+#include "MyVector.h"
+#include "GameObject.h"
+#include "InputSystem.h"
 
 
 class VGamepad : public GameObject {
@@ -30,11 +31,11 @@ class VGamepad : public GameObject {
     public:
 
     //int gamepad = 1; // which gamepad to display
-    SDL_GameController* Vgamepad = nullptr;
+    Tools::GM_Inputs* gm_input = nullptr;
 
 
     VGamepad(); // default constructor
-    VGamepad(SDL_GameController* gmpd); // default constructor
+    VGamepad(Tools::GM_Inputs* gmpd); // default constructor
     ~VGamepad();
 
     void Update(float dt) override;

@@ -7,6 +7,9 @@
 #include <memory>
 #include <raylib.h>
 
+#include "MyVector.h"
+#include "quaternion.h"
+
 
 // Abstract base class (interface)
 class GameObject {
@@ -17,8 +20,8 @@ class GameObject {
 
         virtual ~GameObject() {}  // Virtual destructor for proper cleanup
 
-        // Tools::Vector3 position;
-        // Tools::Quaternion rotation;
+        Tools::Vector3 position;
+        Tools::Quaternion rotation;
 };
 
 

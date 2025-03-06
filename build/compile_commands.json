@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o -c /home/alan/Documents/RayDrone/Tools/InputSystem.cpp",
+  "file": "/home/alan/Documents/RayDrone/Tools/InputSystem.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
   "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o -c /home/alan/Documents/RayDrone/Tools/MyVector.cpp",
   "file": "/home/alan/Documents/RayDrone/Tools/MyVector.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o"
@@ -22,6 +28,18 @@
   "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o -c /home/alan/Documents/RayDrone/Objects/GameObject.cpp",
   "file": "/home/alan/Documents/RayDrone/Objects/GameObject.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o -c /home/alan/Documents/RayDrone/Objects/template_class.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/template_class.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o -c /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/Drone/motors.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o"
 },
 {
   "directory": "/home/alan/Documents/RayDrone/build",

@@ -129,6 +129,30 @@ MyRaylibGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/build
 .PHONY : MyRaylibGame/fast
 
+Objects/Drone/motors.o: Objects/Drone/motors.cpp.o
+.PHONY : Objects/Drone/motors.o
+
+# target to build an object file
+Objects/Drone/motors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o
+.PHONY : Objects/Drone/motors.cpp.o
+
+Objects/Drone/motors.i: Objects/Drone/motors.cpp.i
+.PHONY : Objects/Drone/motors.i
+
+# target to preprocess a source file
+Objects/Drone/motors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.i
+.PHONY : Objects/Drone/motors.cpp.i
+
+Objects/Drone/motors.s: Objects/Drone/motors.cpp.s
+.PHONY : Objects/Drone/motors.s
+
+# target to generate assembly for a file
+Objects/Drone/motors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.s
+.PHONY : Objects/Drone/motors.cpp.s
+
 Objects/Drone/quadcopter.o: Objects/Drone/quadcopter.cpp.o
 .PHONY : Objects/Drone/quadcopter.o
 
@@ -200,6 +224,54 @@ Objects/VGamepad/VGamepad.s: Objects/VGamepad/VGamepad.cpp.s
 Objects/VGamepad/VGamepad.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.s
 .PHONY : Objects/VGamepad/VGamepad.cpp.s
+
+Objects/template_class.o: Objects/template_class.cpp.o
+.PHONY : Objects/template_class.o
+
+# target to build an object file
+Objects/template_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o
+.PHONY : Objects/template_class.cpp.o
+
+Objects/template_class.i: Objects/template_class.cpp.i
+.PHONY : Objects/template_class.i
+
+# target to preprocess a source file
+Objects/template_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.i
+.PHONY : Objects/template_class.cpp.i
+
+Objects/template_class.s: Objects/template_class.cpp.s
+.PHONY : Objects/template_class.s
+
+# target to generate assembly for a file
+Objects/template_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.s
+.PHONY : Objects/template_class.cpp.s
+
+Tools/InputSystem.o: Tools/InputSystem.cpp.o
+.PHONY : Tools/InputSystem.o
+
+# target to build an object file
+Tools/InputSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o
+.PHONY : Tools/InputSystem.cpp.o
+
+Tools/InputSystem.i: Tools/InputSystem.cpp.i
+.PHONY : Tools/InputSystem.i
+
+# target to preprocess a source file
+Tools/InputSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.i
+.PHONY : Tools/InputSystem.cpp.i
+
+Tools/InputSystem.s: Tools/InputSystem.cpp.s
+.PHONY : Tools/InputSystem.s
+
+# target to generate assembly for a file
+Tools/InputSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.s
+.PHONY : Tools/InputSystem.cpp.s
 
 Tools/MyVector.o: Tools/MyVector.cpp.o
 .PHONY : Tools/MyVector.o
@@ -282,6 +354,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyRaylibGame"
+	@echo "... Objects/Drone/motors.o"
+	@echo "... Objects/Drone/motors.i"
+	@echo "... Objects/Drone/motors.s"
 	@echo "... Objects/Drone/quadcopter.o"
 	@echo "... Objects/Drone/quadcopter.i"
 	@echo "... Objects/Drone/quadcopter.s"
@@ -291,6 +366,12 @@ help:
 	@echo "... Objects/VGamepad/VGamepad.o"
 	@echo "... Objects/VGamepad/VGamepad.i"
 	@echo "... Objects/VGamepad/VGamepad.s"
+	@echo "... Objects/template_class.o"
+	@echo "... Objects/template_class.i"
+	@echo "... Objects/template_class.s"
+	@echo "... Tools/InputSystem.o"
+	@echo "... Tools/InputSystem.i"
+	@echo "... Tools/InputSystem.s"
 	@echo "... Tools/MyVector.o"
 	@echo "... Tools/MyVector.i"
 	@echo "... Tools/MyVector.s"

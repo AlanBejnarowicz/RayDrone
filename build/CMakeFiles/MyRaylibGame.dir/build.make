@@ -86,10 +86,24 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyRaylibGame.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/Documents/RayDrone/main.cpp -o CMakeFiles/MyRaylibGame.dir/main.cpp.s
 
+CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
+CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o: /home/alan/Documents/RayDrone/Tools/InputSystem.cpp
+CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o -c /home/alan/Documents/RayDrone/Tools/InputSystem.cpp
+
+CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/Documents/RayDrone/Tools/InputSystem.cpp > CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.i
+
+CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/Documents/RayDrone/Tools/InputSystem.cpp -o CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.s
+
 CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/Tools/MyVector.cpp
 CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o -c /home/alan/Documents/RayDrone/Tools/MyVector.cpp
 
 CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.s: cmake_force
 CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDrone/Tools/quaternion.cpp
 CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o -c /home/alan/Documents/RayDrone/Tools/quaternion.cpp
 
 CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.s: cmake_force
 CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDrone/Objects/GameObject.cpp
 CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o -c /home/alan/Documents/RayDrone/Objects/GameObject.cpp
 
 CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.i: cmake_force
@@ -128,10 +142,38 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/Documents/RayDrone/Objects/GameObject.cpp -o CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.s
 
+CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
+CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/RayDrone/Objects/template_class.cpp
+CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o -c /home/alan/Documents/RayDrone/Objects/template_class.cpp
+
+CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/Documents/RayDrone/Objects/template_class.cpp > CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.i
+
+CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/Documents/RayDrone/Objects/template_class.cpp -o CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.s
+
+CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
+CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp
+CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o -c /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp
+
+CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp > CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.i
+
+CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.s
+
 CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp
 CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o -c /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp
 
 CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.i: cmake_force
@@ -145,7 +187,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.s: cmake_force
 CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: CMakeFiles/MyRaylibGame.dir/flags.make
 CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp
 CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: CMakeFiles/MyRaylibGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o -MF CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o.d -o CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o -c /home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp
 
 CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.i: cmake_force
@@ -159,9 +201,12 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.s: cmake_force
 # Object files for target MyRaylibGame
 MyRaylibGame_OBJECTS = \
 "CMakeFiles/MyRaylibGame.dir/main.cpp.o" \
+"CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o" \
 "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o" \
 "CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o" \
 "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o" \
+"CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o" \
+"CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o" \
 "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o" \
 "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
 
@@ -169,15 +214,18 @@ MyRaylibGame_OBJECTS = \
 MyRaylibGame_EXTERNAL_OBJECTS =
 
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/main.cpp.o
+MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o
+MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o
+MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/build.make
 MyRaylibGame: /usr/local/lib/libraylib.a
 MyRaylibGame: CMakeFiles/MyRaylibGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MyRaylibGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable MyRaylibGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyRaylibGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

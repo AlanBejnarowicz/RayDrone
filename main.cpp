@@ -14,12 +14,14 @@
 // include tools
 #include "Tools/quaternion.h"
 #include "Tools/MyVector.h"
+#include "Tools/InputSystem.h"
 
 
 
 // include Objects
 #include "Objects/GameObject.h"
 #include "Objects/VGamepad/VGamepad.h"
+#include "Objects/Drone/quadcopter.h"
 
 // main collection of GameObjects
 std::vector<std::unique_ptr<GameObject>> gameObjects;
@@ -60,6 +62,12 @@ int main() {
 
     }
 
+    Tools::InputSystem Input_System;
+
+    // Get pointer to GMInputs
+    Tools::GM_Inputs* GMInputs = Input_System.GetGM_Inputs_ptr();
+
+
     // ############### END GAMEPAD FIX ###############
 
 
@@ -67,13 +75,17 @@ int main() {
 
     // #########################
     //  $$$$$ Init Objects $$$$$
-    gameObjects.push_back(std::make_unique<VGamepad>(gamepad));
 
 
+    gameObjects.push_back(std::make_unique<VGamepad>(GMInputs));
+    gameObjects.push_back(std::make_unique<Quadcopter>(GMInputs));
 
 
     while (!WindowShouldClose()) {
         float dt = GetFrameTime();
+
+        // Handle SDL input for gamepad
+        Input_System.HandleGamepadInput();
 
         // Update objects
         for (auto& obj : gameObjects) {

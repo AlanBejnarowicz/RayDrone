@@ -8,9 +8,9 @@ VGamepad::VGamepad()// Initialize gamepad to 0 or the desired index
 
 }
 
-VGamepad::VGamepad(SDL_GameController* gmpd) // Initialize gamepad to 0 or the desired index
+VGamepad::VGamepad(Tools::GM_Inputs* gmpd) // Initialize gamepad to 0 or the desired index
 {
-    Vgamepad = gmpd;
+    gm_input = gmpd;
 }
 
 VGamepad::~VGamepad()
@@ -21,32 +21,11 @@ VGamepad::~VGamepad()
 // GameObject methods
 void VGamepad::Update(float dt) {
 
-
-    SDL_PumpEvents();  // Update SDL's internal state
-
-    float leftStickX = SDL_GameControllerGetAxis(Vgamepad, SDL_CONTROLLER_AXIS_LEFTX) / 32767.0f;
-    float leftStickY = SDL_GameControllerGetAxis(Vgamepad, SDL_CONTROLLER_AXIS_LEFTY) / 32767.0f;
-    float rightStickX = SDL_GameControllerGetAxis(Vgamepad, SDL_CONTROLLER_AXIS_RIGHTX) / 32767.0f;
-    float rightStickY = SDL_GameControllerGetAxis(Vgamepad, SDL_CONTROLLER_AXIS_RIGHTY) / 32767.0f;
-    float leftTrigger = SDL_GameControllerGetAxis(Vgamepad, SDL_CONTROLLER_AXIS_TRIGGERLEFT) / 32767.0f;
-    float rightTrigger = SDL_GameControllerGetAxis(Vgamepad, SDL_CONTROLLER_AXIS_TRIGGERRIGHT) / 32767.0f;
+    axis_1.x = gm_input->roll;
+    axis_1.y = -gm_input->pitch;
+    axis_2.x = gm_input->yaw;
+    axis_2.y = -(gm_input->throttle * 2 - 1);
     
-
-    // std::cout << "Left Stick X: " << leftStickX << std::endl;
-    // std::cout << "Left Stick Y: " << leftStickY << std::endl;
-    // std::cout << "Right Stick X: " << rightStickX << std::endl;
-    // std::cout << "Right Stick Y: " << rightStickY << std::endl;
-    // std::cout << "Left Trigger: " << leftTrigger << std::endl;
-    // std::cout << "Right Trigger: " << rightTrigger << std::endl;
-
-
-    axis_1.x = leftStickX;
-    axis_1.y = -leftStickY;
-    axis_2.x = rightStickX;
-    axis_2.y = -(leftTrigger * 2 - 1);
-    
-
-
 }
 
 void VGamepad::Draw() {
