@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o.d"
+  "/home/alan/Documents/RayDrone/Objects/GameObject.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d"
+  "/home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o.d"
   "/home/alan/Documents/RayDrone/Tools/MyVector.cpp" "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o.d"
   "/home/alan/Documents/RayDrone/Tools/quaternion.cpp" "CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o.d"
   "/home/alan/Documents/RayDrone/main.cpp" "CMakeFiles/MyRaylibGame.dir/main.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/main.cpp.o.d"

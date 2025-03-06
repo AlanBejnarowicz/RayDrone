@@ -129,6 +129,78 @@ MyRaylibGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/build
 .PHONY : MyRaylibGame/fast
 
+Objects/Drone/quadcopter.o: Objects/Drone/quadcopter.cpp.o
+.PHONY : Objects/Drone/quadcopter.o
+
+# target to build an object file
+Objects/Drone/quadcopter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o
+.PHONY : Objects/Drone/quadcopter.cpp.o
+
+Objects/Drone/quadcopter.i: Objects/Drone/quadcopter.cpp.i
+.PHONY : Objects/Drone/quadcopter.i
+
+# target to preprocess a source file
+Objects/Drone/quadcopter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.i
+.PHONY : Objects/Drone/quadcopter.cpp.i
+
+Objects/Drone/quadcopter.s: Objects/Drone/quadcopter.cpp.s
+.PHONY : Objects/Drone/quadcopter.s
+
+# target to generate assembly for a file
+Objects/Drone/quadcopter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.s
+.PHONY : Objects/Drone/quadcopter.cpp.s
+
+Objects/GameObject.o: Objects/GameObject.cpp.o
+.PHONY : Objects/GameObject.o
+
+# target to build an object file
+Objects/GameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o
+.PHONY : Objects/GameObject.cpp.o
+
+Objects/GameObject.i: Objects/GameObject.cpp.i
+.PHONY : Objects/GameObject.i
+
+# target to preprocess a source file
+Objects/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.i
+.PHONY : Objects/GameObject.cpp.i
+
+Objects/GameObject.s: Objects/GameObject.cpp.s
+.PHONY : Objects/GameObject.s
+
+# target to generate assembly for a file
+Objects/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.s
+.PHONY : Objects/GameObject.cpp.s
+
+Objects/VGamepad/VGamepad.o: Objects/VGamepad/VGamepad.cpp.o
+.PHONY : Objects/VGamepad/VGamepad.o
+
+# target to build an object file
+Objects/VGamepad/VGamepad.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o
+.PHONY : Objects/VGamepad/VGamepad.cpp.o
+
+Objects/VGamepad/VGamepad.i: Objects/VGamepad/VGamepad.cpp.i
+.PHONY : Objects/VGamepad/VGamepad.i
+
+# target to preprocess a source file
+Objects/VGamepad/VGamepad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.i
+.PHONY : Objects/VGamepad/VGamepad.cpp.i
+
+Objects/VGamepad/VGamepad.s: Objects/VGamepad/VGamepad.cpp.s
+.PHONY : Objects/VGamepad/VGamepad.s
+
+# target to generate assembly for a file
+Objects/VGamepad/VGamepad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.s
+.PHONY : Objects/VGamepad/VGamepad.cpp.s
+
 Tools/MyVector.o: Tools/MyVector.cpp.o
 .PHONY : Tools/MyVector.o
 
@@ -210,6 +282,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyRaylibGame"
+	@echo "... Objects/Drone/quadcopter.o"
+	@echo "... Objects/Drone/quadcopter.i"
+	@echo "... Objects/Drone/quadcopter.s"
+	@echo "... Objects/GameObject.o"
+	@echo "... Objects/GameObject.i"
+	@echo "... Objects/GameObject.s"
+	@echo "... Objects/VGamepad/VGamepad.o"
+	@echo "... Objects/VGamepad/VGamepad.i"
+	@echo "... Objects/VGamepad/VGamepad.s"
 	@echo "... Tools/MyVector.o"
 	@echo "... Tools/MyVector.i"
 	@echo "... Tools/MyVector.s"

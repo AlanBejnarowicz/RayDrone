@@ -1,20 +1,38 @@
 [
 {
   "directory": "/home/alan/Documents/RayDrone/build",
-  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/main.cpp.o -c /home/alan/Documents/RayDrone/main.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/main.cpp.o -c /home/alan/Documents/RayDrone/main.cpp",
   "file": "/home/alan/Documents/RayDrone/main.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/main.cpp.o"
 },
 {
   "directory": "/home/alan/Documents/RayDrone/build",
-  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o -c /home/alan/Documents/RayDrone/Tools/MyVector.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o -c /home/alan/Documents/RayDrone/Tools/MyVector.cpp",
   "file": "/home/alan/Documents/RayDrone/Tools/MyVector.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o"
 },
 {
   "directory": "/home/alan/Documents/RayDrone/build",
-  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o -c /home/alan/Documents/RayDrone/Tools/quaternion.cpp",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o -c /home/alan/Documents/RayDrone/Tools/quaternion.cpp",
   "file": "/home/alan/Documents/RayDrone/Tools/quaternion.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o -c /home/alan/Documents/RayDrone/Objects/GameObject.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/GameObject.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o -c /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o -c /home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
 }
 ]

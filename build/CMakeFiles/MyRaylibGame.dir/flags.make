@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alan/Documents/RayDrone/Tools
+CXX_INCLUDES = -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2
 
 CXX_FLAGS = -g -std=gnu++17 -I/usr/local/include
 

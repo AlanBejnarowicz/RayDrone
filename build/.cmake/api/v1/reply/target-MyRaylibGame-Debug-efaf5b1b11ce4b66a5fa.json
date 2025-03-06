@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 13,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -57,7 +57,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 12,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -80,6 +80,14 @@
 				{
 					"backtrace" : 6,
 					"path" : "/home/alan/Documents/RayDrone/Tools"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/alan/Documents/RayDrone/Objects"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/usr/include/SDL2"
 				}
 			],
 			"language" : "CXX",
@@ -95,7 +103,10 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4,
+				5
 			]
 		}
 	],
@@ -115,6 +126,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "/usr/local/lib/libraylib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lSDL2",
 				"role" : "libraries"
 			},
 			{
@@ -140,7 +156,10 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4,
+				5
 			]
 		}
 	],
@@ -162,6 +181,24 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Tools/quaternion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Objects/GameObject.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Objects/Drone/quadcopter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Objects/VGamepad/VGamepad.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

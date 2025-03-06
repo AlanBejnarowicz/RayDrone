@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o"
+  "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o.d"
+  "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o"
+  "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d"
+  "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
+  "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o"

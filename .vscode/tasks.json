@@ -2,9 +2,10 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "RayLib Game",
+            "label": "Build RayLib Game (CMake)",
             "type": "shell",
-            "command": "cmake --build build",
+            "command": "cmake",
+            "args": ["--build", "build"],
             "group": {
                 "kind": "build",
                 "isDefault": true

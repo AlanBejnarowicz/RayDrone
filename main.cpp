@@ -1,5 +1,13 @@
 #include "raylib.h"
+#include <SDL2/SDL.h>
 
+
+#include <thread>
+#include <atomic>
+#include <chrono>
+#include <mutex>
+#include <vector>
+#include <memory>
 #include <iostream>
 
 
@@ -7,57 +15,107 @@
 #include "Tools/quaternion.h"
 #include "Tools/MyVector.h"
 
+
+
+// include Objects
+#include "Objects/GameObject.h"
+#include "Objects/VGamepad/VGamepad.h"
+
+// main collection of GameObjects
+std::vector<std::unique_ptr<GameObject>> gameObjects;
+
+
 int main() {
-    // Initialization
-    const int screenWidth = 800;
-    const int screenHeight = 600;
     
-    InitWindow(screenWidth, screenHeight, "RayLib 3D Game Example");
+    // Camera and window initialization
+
+    const int screenWidth = 1600;
+    const int screenHeight = 1000;
+    
+    InitWindow(screenWidth, screenHeight, "RayDroneSim");
     Camera camera = { 0 };
     camera.position = (Vector3){ 10.0f, 10.0f, 10.0f }; 
     camera.target = (Vector3){ 0.0f, 0.0f, 0.0f };
     camera.up = (Vector3){ 0.0f, 1.0f, 0.0f };
-    camera.fovy = 45.0f;
+    camera.fovy = 60.0f;
     camera.projection = CAMERA_PERSPECTIVE;
 
-    SetTargetFPS(60);
+    SetTargetFPS(120);
 
 
-    // quaternion test
+    // ############### GAMEPAD FIX ############### 
 
-    Tools::Quaternion q1(1, 2, 3, 4);
-    Tools::Quaternion q2(4 ,3 ,2 ,1);
-
-    std::cout << q1 + q2 << std::endl;
-
-
-    Tools::Vector3 v1(1, 2, 3);
-    Tools::Vector3 v2(4, 5, 6);
-    Tools::Quaternion q(0.7071f, 0, 0.7071f, 0); // 90-degree rotation around Y-axis
+    // SDL Gamecontroller
+    if (SDL_Init(SDL_INIT_GAMECONTROLLER) < 0) {
+        std::cerr << "Failed to initialize SDL: " << std::endl;
+        return -1;
+    }
 
 
-    std::cout <<std::endl << "********* Rotation Test ********* " << std::endl;
-    std::cout << "Vector 1 before: " << v1 << std::endl;
 
-    v1 = v1 * q;
+    SDL_GameController* gamepad = nullptr;
+    if (SDL_NumJoysticks() > 0) {
+        gamepad = SDL_GameControllerOpen(0);
+        std::cout << "Gamepad " << ": " << SDL_GameControllerName(gamepad) << std::endl;
+
+    }
+
+    // ############### END GAMEPAD FIX ###############
 
 
-    std::cout << "Vector 1 after: " << v1 << std::endl;
+
+
+    // #########################
+    //  $$$$$ Init Objects $$$$$
+    gameObjects.push_back(std::make_unique<VGamepad>(gamepad));
+
+
 
 
     while (!WindowShouldClose()) {
+        float dt = GetFrameTime();
+
+        // Update objects
+        for (auto& obj : gameObjects) {
+            obj->Update(dt);
+        }
+        
+
         // Update
         UpdateCamera(&camera, CAMERA_ORBITAL);
-        
         // Draw
         BeginDrawing();
+
+
         ClearBackground(RAYWHITE);
         BeginMode3D(camera);
-        DrawGrid(10, 1.0f);
+
+
+        DrawGrid(100, 1.0f);
+
+        for (auto& obj : gameObjects) {
+            obj->Draw();
+        }
+
+
         EndMode3D();
-        DrawText("3D RayLib Scene", 10, 10, 20, DARKGRAY);
+
+
+        for (auto& obj : gameObjects) {
+            obj->Draw2D();
+        }
+
+
+        DrawText("RayDroneSim V0.01", 10, 10, 20, DARKGRAY);
         EndDrawing();
+
+
     }
+
+
+
+
+    SDL_GameControllerClose(gamepad);
 
     CloseWindow(); // Close window and OpenGL context
     return 0;

@@ -51,9 +51,6 @@ namespace Tools {
             // #####   friends   #####
             friend std::ostream& operator<<(std::ostream& os, const Vector3& q);
 
-            // Friend function for scalar multiplication
-            friend Vector3 operator*(float scalar, const Vector3& v);
-
 
 
     };
