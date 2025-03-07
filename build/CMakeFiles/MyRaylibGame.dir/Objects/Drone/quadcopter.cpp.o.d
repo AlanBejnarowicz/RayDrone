@@ -287,6 +287,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
+ /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
  /home/alan/Documents/RayDrone/Objects/GameObject.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \

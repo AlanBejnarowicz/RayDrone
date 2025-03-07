@@ -26,7 +26,7 @@ void Quadcopter::Start(void){
         // ensure zero start conditions
         position = {0,0,0};
         last_possition = position;
-        rotation = {0,0,0,0};
+        rotation = {1,0,0,0};
         last_rotation = rotation;
         velocity = {0,0,0};
         
@@ -71,9 +71,47 @@ void Quadcopter::apply_deadband(){
 }
 
 
-void Quadcopter::UpdateDronePhysics(float dt){
+void Quadcopter::UpdateDronePhysics(float dT){
 
     Tools::Vector3 FG = gravity * mass;
+
+    //std::cout << "Thrust: "<< Q4Motors.vertical_thrust << std::endl; 
+
+    Tools::Vector3 thrustBody = {0 ,Q4Motors.vertical_thrust ,0 };
+    //std::cout << "Thrust: "<< thrustBody << std::endl;
+
+    // calculate thrust in local coordinates
+    
+    Tools::Vector3 thrustGlobal = thrustBody * rotation;
+    //std::cout << "Thrust Global: "<< thrustGlobal << std::endl;
+
+    Tools::Vector3 totalF = FG + thrustGlobal;
+    Tools::Vector3 acceleration = totalF / mass;
+
+    // integrate acceleration velocity to possition
+    velocity = velocity + acceleration * dT;
+    position = position + velocity * dT;
+
+
+    // Rotation
+    Tools::Vector3 omegaBody = angularMomentumBody * invInertiaDiag;
+
+    //cross produvt of omegaBody and angularMomentumBody
+    Tools::Vector3 crossTerm = omegaBody ^ angularMomentumBody;
+
+    Tools::Vector3 dLdT = Q4Motors.momentums - crossTerm;
+
+    // integrate angular momentum
+    angularMomentumBody = angularMomentumBody + dLdT * dT;
+
+    // update omega body
+    omegaBody = angularMomentumBody * invInertiaDiag;
+
+    Tools::Quaternion qDot = rotation.derivative(omegaBody);
+
+    //integrate rotation
+    rotation = rotation + (qDot * dT);
+    rotation = rotation.normalize();
 
 }
 
@@ -84,6 +122,13 @@ void Quadcopter::Update(float dt) {
     Q4Motors.UpdateMotors(gm_input_deadband);
 
     UpdateDronePhysics(dt);
+
+    if(position.y <= 0){
+        position.y = 0;
+        velocity.y = 0;
+    }
+
+    
 
 
 }

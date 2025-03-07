@@ -10,6 +10,9 @@
 
 namespace Tools {
 
+    class Quaternion;
+
+
     class Vector3 {
 
         private:
@@ -44,8 +47,13 @@ namespace Tools {
             // Rotate Vector by Quaternion
             Vector3 operator*(const Quaternion& q) const;
 
-
+            //divide by scalar
             Vector3 operator/(float scalar) const;
+
+            //cross product
+            Vector3 operator^(const Vector3& q) const;
+
+            // is equal?
             bool operator==(const Vector3& q) const;
 
             // #####   friends   #####
@@ -54,6 +62,13 @@ namespace Tools {
 
 
     };
+
+
+
+
+
+
+
 
 
 }

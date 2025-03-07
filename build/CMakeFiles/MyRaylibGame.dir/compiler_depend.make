@@ -2291,6 +2291,7 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
 
 CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDrone/Tools/quaternion.cpp \
+  /home/alan/Documents/RayDrone/Tools/MyVector.h \
   /home/alan/Documents/RayDrone/Tools/quaternion.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \

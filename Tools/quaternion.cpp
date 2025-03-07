@@ -2,6 +2,14 @@
 
 namespace Tools {
 
+
+
+    // ############################################################
+    // ##################   QUATERNION   ##########################
+
+
+
+
     Quaternion::Quaternion(double w, double x, double y, double z){
         this->w = w;
         this->x = x;
@@ -62,6 +70,19 @@ namespace Tools {
 
     // ########################################  MATH  ########################################
 
+
+    //Quaternion derivative
+
+    Quaternion Quaternion::derivative(const Vector3 omegaB) const {
+        Quaternion q_dot;
+        q_dot.w = 0.5 * (-x * omegaB.x - y * omegaB.y - z * omegaB.z);
+        q_dot.x = 0.5 * (w * omegaB.x + y * omegaB.z - z * omegaB.y);
+        q_dot.y = 0.5 * (w * omegaB.y - x * omegaB.z + z * omegaB.x);
+        q_dot.z = 0.5 * (w * omegaB.z + x * omegaB.y - y * omegaB.x);
+        return q_dot;
+
+    }
+
     // Quaternion multiplication
     Quaternion Quaternion::operator*(const Quaternion& q) const {
         return Quaternion(
@@ -95,6 +116,8 @@ namespace Tools {
     bool Quaternion::operator==(const Quaternion& q) const {
         return w == q.w && x == q.x && y == q.y && z == q.z;
     }
+
+
 
 
 }

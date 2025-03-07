@@ -195,4 +195,5 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
+ /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h

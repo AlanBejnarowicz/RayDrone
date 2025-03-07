@@ -315,6 +315,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
+ /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/InputSystem.h \
  /home/alan/Documents/RayDrone/Objects/GameObject.h \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \

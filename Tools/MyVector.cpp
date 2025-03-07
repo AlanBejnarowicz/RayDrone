@@ -90,4 +90,18 @@ namespace Tools {
     }
 
 
+       // Scalar multiplication
+       Vector3 Vector3::operator^(const Vector3& q) const {
+        return Vector3(
+            y * q.z - z * q.y,
+            z * q.x - x * q.z,
+            x * q.y - y * q.x
+        );
+    }
+
+
+
+
+
+
 }

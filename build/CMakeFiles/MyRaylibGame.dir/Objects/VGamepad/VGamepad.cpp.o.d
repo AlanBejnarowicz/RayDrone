@@ -173,6 +173,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
+ /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Objects/GameObject.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \

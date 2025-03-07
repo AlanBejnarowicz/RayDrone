@@ -37,7 +37,7 @@ class Quadcopter : public GameObject {
     // private functions
     void Start(void);
     void apply_deadband(void);
-    void UpdateDronePhysics(float dt);
+    void UpdateDronePhysics(float dT);
 
 
     public:

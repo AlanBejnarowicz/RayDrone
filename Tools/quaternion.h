@@ -5,9 +5,13 @@
 #include <iostream>
 #include <math.h>
 
+#include "MyVector.h"
+
 namespace Tools {
 
-    class Quaternion {
+class Vector3;
+
+class Quaternion {
 
     private:
         /* data */
@@ -26,6 +30,10 @@ namespace Tools {
         Quaternion normalize() const;
         Quaternion conjugate() const;
         Quaternion inverse() const;
+
+
+        // quaternion derivative
+        Quaternion derivative(const Vector3 omegaB) const;
 
 
 
@@ -51,8 +59,6 @@ namespace Tools {
 
     };
 
-
 }
-
 
 #endif // QUATERNION_H
