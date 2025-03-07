@@ -18,6 +18,17 @@ namespace Tools {
     Vector3::~Vector3()
     {
     }
+    
+
+
+    // Convert from Raylib's Vector3
+    Vector3::Vector3(const ::Vector3& v) : x(v.x), y(v.y), z(v.z) {}
+
+    // Convert to Raylib's Vector3
+    Vector3::operator ::Vector3() const {
+        return { x, y, z };
+    }
+
 
 
 
@@ -32,8 +43,6 @@ namespace Tools {
         double m = magnitude();
         return Vector3(x / m, y / m, z / m);
     }
-
-
 
 
 

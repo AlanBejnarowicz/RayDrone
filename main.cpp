@@ -47,21 +47,6 @@ int main() {
 
     // ############### GAMEPAD FIX ############### 
 
-    // SDL Gamecontroller
-    if (SDL_Init(SDL_INIT_GAMECONTROLLER) < 0) {
-        std::cerr << "Failed to initialize SDL: " << std::endl;
-        return -1;
-    }
-
-
-
-    SDL_GameController* gamepad = nullptr;
-    if (SDL_NumJoysticks() > 0) {
-        gamepad = SDL_GameControllerOpen(0);
-        std::cout << "Gamepad " << ": " << SDL_GameControllerName(gamepad) << std::endl;
-
-    }
-
     Tools::InputSystem Input_System;
 
     // Get pointer to GMInputs
@@ -95,6 +80,7 @@ int main() {
 
         // Update
         UpdateCamera(&camera, CAMERA_ORBITAL);
+
         // Draw
         BeginDrawing();
 
@@ -127,7 +113,7 @@ int main() {
 
 
 
-    SDL_GameControllerClose(gamepad);
+    //SDL_GameControllerClose(gamepad);
 
     CloseWindow(); // Close window and OpenGL context
     return 0;

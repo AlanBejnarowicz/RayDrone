@@ -324,4 +324,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: \
  /home/alan/Documents/RayDrone/Objects/GameObject.h \
  /home/alan/Documents/RayDrone/Tools/InputSystem.h \
  /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.h \
- /home/alan/Documents/RayDrone/Objects/Drone/motors.h
+ /usr/local/include/raymath.h \
+ /home/alan/Documents/RayDrone/Objects/Drone/motors.h \
+ /home/alan/Documents/RayDrone/Objects/Drone/vIMU.h \
+ /home/alan/Documents/RayDrone/Objects/Drone/controller.h

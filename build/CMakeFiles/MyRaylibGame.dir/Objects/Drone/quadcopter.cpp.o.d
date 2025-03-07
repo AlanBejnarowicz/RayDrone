@@ -170,7 +170,12 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/local/include/raylib.h \
+ /usr/local/include/raymath.h \
  /home/alan/Documents/RayDrone/Tools/InputSystem.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
@@ -290,11 +295,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
  /home/alan/Documents/RayDrone/Objects/GameObject.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/uses_allocator.h \
@@ -312,5 +313,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/local/include/raylib.h \
- /home/alan/Documents/RayDrone/Objects/Drone/motors.h
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/alan/Documents/RayDrone/Objects/Drone/motors.h \
+ /home/alan/Documents/RayDrone/Objects/Drone/vIMU.h \
+ /home/alan/Documents/RayDrone/Objects/Drone/controller.h

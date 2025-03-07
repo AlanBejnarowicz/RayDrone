@@ -26,7 +26,7 @@ void Motors::UpdateMotors(Tools::GM_Inputs input){
 
 
     // apply mixer
-    Q4Mixer(input.pitch, input.roll, input.yaw, input.throttle);
+    Q4Mixer(input.yaw, input.pitch, input.roll, input.throttle);
 
     // simulate motors with alpha-beta filter
     for(int i = 0; i <4; i++){
@@ -53,5 +53,13 @@ void Motors::Q4Mixer (float pitch, float roll, float yaw, float throttle){
     motors[1] = throttle - pitch + roll - yaw;
     motors[2] = throttle + pitch - roll - yaw;
     motors[3] = throttle + pitch + roll + yaw;
+
+    // limit to <0.0f,1.0f>
+    for (int i = 0; i < 4; i++) {
+        motors[i] = std::min(1.0f, motors[i]);
+        motors[i] = std::max(0.0f, motors[i]);
+    }
+
+
 
 }

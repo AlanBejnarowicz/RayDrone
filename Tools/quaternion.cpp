@@ -31,6 +31,23 @@ namespace Tools {
 
 
 
+    // Convert from Raylib's Quaternion
+    Quaternion::Quaternion(const ::Quaternion& v) : x(v.x), y(v.y), z(v.z), w(v.w) {}
+
+    // Convert to Raylib's Quaternion
+    Quaternion::operator ::Quaternion() const {
+        return { x, y, z, w };
+    }
+
+
+    //convert to Tools::Vector3 
+    Quaternion::operator ::Tools::Vector3() const {
+        return { x, y, z };
+    }
+
+
+
+
     // Magnitude
     double Quaternion::magnitude() const {
         return std::sqrt(w * w + x * x + y * y + z * z);
@@ -52,9 +69,39 @@ namespace Tools {
 
     // Inverse
     Quaternion Quaternion::inverse() const {
-        return conjugate() / (magnitude() * magnitude());
+        double mag = magnitude();
+        if (mag == 0) {
+            throw std::runtime_error("Cannot invert a quaternion with zero magnitude");
+        }
+        return conjugate() / (mag * mag);
     }
 
+    // Inverse
+    Matrix Quaternion::RotationMatrix() const {
+        Matrix r;
+
+        r.m0 = 1 - 2 * (y * y + z * z);
+        r.m1 = 2 * (x * y - z * w);
+        r.m2 = 2 * (x * z + y * w);
+        r.m3 = 0;
+
+        r.m4 = 2 * (x * y + z * w);
+        r.m5 = 1 - 2 * (x * x + z * z);
+        r.m6 = 2 * (y * z - x * w);
+        r.m7 = 0;
+
+        r.m8 = 2 * (x * z - y * w);
+        r.m9 = 2 * (y * z + x * w);
+        r.m10 = 1 - 2 * (x * x + y * y);
+        r.m11 = 0;
+
+        r.m12 = 0;
+        r.m13 = 0;
+        r.m14 = 0;
+        r.m15 = 1;
+
+        return r;
+    }
 
 
 

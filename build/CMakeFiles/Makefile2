@@ -85,12 +85,12 @@ clean: CMakeFiles/MyRaylibGame.dir/clean
 CMakeFiles/MyRaylibGame.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target MyRaylibGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target MyRaylibGame"
 .PHONY : CMakeFiles/MyRaylibGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyRaylibGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/Documents/RayDrone/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/Documents/RayDrone/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyRaylibGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alan/Documents/RayDrone/build/CMakeFiles 0
 .PHONY : CMakeFiles/MyRaylibGame.dir/rule
@@ -102,7 +102,7 @@ MyRaylibGame: CMakeFiles/MyRaylibGame.dir/rule
 # codegen rule for target.
 CMakeFiles/MyRaylibGame.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target MyRaylibGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alan/Documents/RayDrone/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Finished codegen for target MyRaylibGame"
 .PHONY : CMakeFiles/MyRaylibGame.dir/codegen
 
 # clean rule for target.

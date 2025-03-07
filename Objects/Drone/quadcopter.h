@@ -4,6 +4,10 @@
 
 #include <iostream>
 #include <math.h>
+#include <vector>
+
+#include <raylib.h>
+#include "raymath.h"
 
 #include "InputSystem.h"
 
@@ -14,9 +18,24 @@
 
 //  drone classes
 #include "motors.h"
+#include "vIMU.h"
+#include "controller.h"
+
+struct WireframePoint{    
+    Tools::Vector3 point;
+    std::vector<int> neighbours;
+};
+
+struct Wireframe3D{
+    Tools::Vector3 origin = {0,0,0};
+    std::vector <WireframePoint> elements;
+    Color wire_color = GREEN;
+};
+
 
 
 class Quadcopter : public GameObject {
+
 
     private:
 
@@ -38,15 +57,21 @@ class Quadcopter : public GameObject {
     void Start(void);
     void apply_deadband(void);
     void UpdateDronePhysics(float dT);
+    void DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, Tools::Vector3 size, Wireframe3D *wireframe);
+
+
+    //3D model
+    Wireframe3D droneModel;
+    Mesh droneMesh;
+
 
 
     public:
     Motors Q4Motors;
+    vIMU virtualIMU;
+    PIDController PID;
 
     Tools::Vector3 velocity;
-
-
-    Tools::Quaternion last_rotation;
     Tools::Vector3 last_possition;
 
 

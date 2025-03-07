@@ -172,6 +172,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
+ /usr/local/include/raylib.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Objects/GameObject.h \
@@ -197,7 +198,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/local/include/raylib.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
  /home/alan/Documents/RayDrone/Tools/InputSystem.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \

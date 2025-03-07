@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <math.h>
+#include<raylib.h>
 
 
 #include "quaternion.h"
@@ -31,6 +32,11 @@ namespace Tools {
             double magnitude() const;
             Vector3 normalize() const;
 
+
+            //compatibility 
+            // Convert between Tools::Vector3 and Raylib::Vector3
+            Vector3(const ::Vector3& v); // Convert from Raylib Vector3
+            operator ::Vector3() const;  // Convert to Raylib Vector3
 
             // overrides
 

@@ -170,5 +170,5 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/local/include/raylib.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h

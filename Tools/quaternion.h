@@ -5,6 +5,8 @@
 #include <iostream>
 #include <math.h>
 
+#include <raylib.h>
+
 #include "MyVector.h"
 
 namespace Tools {
@@ -30,11 +32,21 @@ class Quaternion {
         Quaternion normalize() const;
         Quaternion conjugate() const;
         Quaternion inverse() const;
+        Matrix RotationMatrix() const;
 
 
         // quaternion derivative
         Quaternion derivative(const Vector3 omegaB) const;
 
+
+        // raylib quaternion compatibility
+        // Convert between Tools::Vector3 and Raylib::Quaternion
+        Quaternion(const ::Quaternion& v); // Convert from Raylib Quaternion
+        operator ::Quaternion() const;  // Convert to Raylib Quaternion
+
+
+        // casting on Tools::Vector3
+        operator ::Tools::Vector3() const;  // Convert to Tools::Vector3
 
 
         // overrides

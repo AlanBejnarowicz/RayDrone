@@ -129,6 +129,30 @@ MyRaylibGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/build
 .PHONY : MyRaylibGame/fast
 
+Objects/Drone/controller.o: Objects/Drone/controller.cpp.o
+.PHONY : Objects/Drone/controller.o
+
+# target to build an object file
+Objects/Drone/controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o
+.PHONY : Objects/Drone/controller.cpp.o
+
+Objects/Drone/controller.i: Objects/Drone/controller.cpp.i
+.PHONY : Objects/Drone/controller.i
+
+# target to preprocess a source file
+Objects/Drone/controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.i
+.PHONY : Objects/Drone/controller.cpp.i
+
+Objects/Drone/controller.s: Objects/Drone/controller.cpp.s
+.PHONY : Objects/Drone/controller.s
+
+# target to generate assembly for a file
+Objects/Drone/controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.s
+.PHONY : Objects/Drone/controller.cpp.s
+
 Objects/Drone/motors.o: Objects/Drone/motors.cpp.o
 .PHONY : Objects/Drone/motors.o
 
@@ -176,6 +200,30 @@ Objects/Drone/quadcopter.s: Objects/Drone/quadcopter.cpp.s
 Objects/Drone/quadcopter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.s
 .PHONY : Objects/Drone/quadcopter.cpp.s
+
+Objects/Drone/vIMU.o: Objects/Drone/vIMU.cpp.o
+.PHONY : Objects/Drone/vIMU.o
+
+# target to build an object file
+Objects/Drone/vIMU.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o
+.PHONY : Objects/Drone/vIMU.cpp.o
+
+Objects/Drone/vIMU.i: Objects/Drone/vIMU.cpp.i
+.PHONY : Objects/Drone/vIMU.i
+
+# target to preprocess a source file
+Objects/Drone/vIMU.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.i
+.PHONY : Objects/Drone/vIMU.cpp.i
+
+Objects/Drone/vIMU.s: Objects/Drone/vIMU.cpp.s
+.PHONY : Objects/Drone/vIMU.s
+
+# target to generate assembly for a file
+Objects/Drone/vIMU.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.s
+.PHONY : Objects/Drone/vIMU.cpp.s
 
 Objects/GameObject.o: Objects/GameObject.cpp.o
 .PHONY : Objects/GameObject.o
@@ -354,12 +402,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyRaylibGame"
+	@echo "... Objects/Drone/controller.o"
+	@echo "... Objects/Drone/controller.i"
+	@echo "... Objects/Drone/controller.s"
 	@echo "... Objects/Drone/motors.o"
 	@echo "... Objects/Drone/motors.i"
 	@echo "... Objects/Drone/motors.s"
 	@echo "... Objects/Drone/quadcopter.o"
 	@echo "... Objects/Drone/quadcopter.i"
 	@echo "... Objects/Drone/quadcopter.s"
+	@echo "... Objects/Drone/vIMU.o"
+	@echo "... Objects/Drone/vIMU.i"
+	@echo "... Objects/Drone/vIMU.s"
 	@echo "... Objects/GameObject.o"
 	@echo "... Objects/GameObject.i"
 	@echo "... Objects/GameObject.s"

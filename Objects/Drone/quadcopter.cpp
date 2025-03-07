@@ -27,7 +27,6 @@ void Quadcopter::Start(void){
         position = {0,0,0};
         last_possition = position;
         rotation = {1,0,0,0};
-        last_rotation = rotation;
         velocity = {0,0,0};
         
         //precompute diagonal inverse inertia
@@ -38,6 +37,17 @@ void Quadcopter::Start(void){
         invInertiaDiag.z = 1 / InertiaDiag.z;
 
         //!!!! DIAG ELEMENTS CANNOT BE ZERO !!!!
+
+        // init IMU
+        virtualIMU.last_rotation = rotation;
+        
+
+        // load mesh for drone
+        droneMesh = GenMeshCube(1.0f, 0.25f, 1.0f);
+
+
+
+
 
 
 }
@@ -116,9 +126,43 @@ void Quadcopter::UpdateDronePhysics(float dT){
 }
 
 
+
+void Quadcopter::DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, Tools::Vector3 size, Wireframe3D *wireframe) {
+    // Apply rotation and move it to position
+    Matrix transform = MatrixMultiply(rotation.RotationMatrix(), MatrixTranslate(pos.x, pos.y, pos.z));
+    
+    // Draw the cube mesh with red color
+    Material material = LoadMaterialDefault();
+    material.maps[MATERIAL_MAP_DIFFUSE].color = RED;
+    DrawMesh(droneMesh, material, transform);
+
+
+}
+
+
+
+
+
+
+
 // GameObject methods
 void Quadcopter::Update(float dt) {
     apply_deadband();
+
+    Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
+
+    std::cout << "Local Omega: " << localOmega << std::endl;
+
+    Tools::Vector3 PID_out = PID.RatePID(gm_input_deadband, localOmega, dt);
+
+    std::cout << "PID_out: " << PID_out << std::endl;
+
+    //gm_input_deadband.pitch = PID_out.x;
+    gm_input_deadband.yaw = PID_out.x;
+    //gm_input_deadband.roll = PID_out.z;
+
+    std::cout<<"yaw: " << gm_input_deadband.roll << std::endl;
+
     Q4Motors.UpdateMotors(gm_input_deadband);
 
     UpdateDronePhysics(dt);
@@ -128,15 +172,20 @@ void Quadcopter::Update(float dt) {
         velocity.y = 0;
     }
 
-    
-
 
 }
+
+
+
+
 
 void Quadcopter::Draw() {
 
     Vector3 r_pos = {position.x, position.y, position.z};
-    DrawCubeWires(r_pos, 1.0, 0.2, 1.0 , GREEN);
+    //DrawCubeWires(r_pos, 1.0, 0.2, 1.0 , GREEN);
+
+    Tools::Vector3 size = {1,1,1};
+    DrawDrone3D(position,rotation,size,&droneModel);
 
 }
 
