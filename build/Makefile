@@ -273,6 +273,30 @@ Objects/VGamepad/VGamepad.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.s
 .PHONY : Objects/VGamepad/VGamepad.cpp.s
 
+Objects/World/Gworld.o: Objects/World/Gworld.cpp.o
+.PHONY : Objects/World/Gworld.o
+
+# target to build an object file
+Objects/World/Gworld.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o
+.PHONY : Objects/World/Gworld.cpp.o
+
+Objects/World/Gworld.i: Objects/World/Gworld.cpp.i
+.PHONY : Objects/World/Gworld.i
+
+# target to preprocess a source file
+Objects/World/Gworld.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.i
+.PHONY : Objects/World/Gworld.cpp.i
+
+Objects/World/Gworld.s: Objects/World/Gworld.cpp.s
+.PHONY : Objects/World/Gworld.s
+
+# target to generate assembly for a file
+Objects/World/Gworld.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.s
+.PHONY : Objects/World/Gworld.cpp.s
+
 Objects/template_class.o: Objects/template_class.cpp.o
 .PHONY : Objects/template_class.o
 
@@ -420,6 +444,9 @@ help:
 	@echo "... Objects/VGamepad/VGamepad.o"
 	@echo "... Objects/VGamepad/VGamepad.i"
 	@echo "... Objects/VGamepad/VGamepad.s"
+	@echo "... Objects/World/Gworld.o"
+	@echo "... Objects/World/Gworld.i"
+	@echo "... Objects/World/Gworld.s"
 	@echo "... Objects/template_class.o"
 	@echo "... Objects/template_class.i"
 	@echo "... Objects/template_class.s"

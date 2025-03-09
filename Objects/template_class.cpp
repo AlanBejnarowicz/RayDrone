@@ -27,5 +27,4 @@ void TemplateClass::Draw() {
 void TemplateClass::Draw2D() {
    
 
-
 }

@@ -2,6 +2,7 @@
 #include "quadcopter.h"
 
 
+
 Quadcopter::Quadcopter()// Initialize gamepad to 0 or the desired index
 {
     Start();
@@ -85,6 +86,9 @@ void Quadcopter::UpdateDronePhysics(float dT){
 
     //std::cout << "Thrust: "<< Q4Motors.vertical_thrust << std::endl; 
 
+    // aerodynamics drag
+    Tools::Vector3 aeroDrag = velocity * (-0.5f * CX_coef * velocity.magnitude());
+
     Tools::Vector3 thrustBody = {0 ,Q4Motors.vertical_thrust ,0 };
     //std::cout << "Thrust: "<< thrustBody << std::endl;
 
@@ -94,7 +98,7 @@ void Quadcopter::UpdateDronePhysics(float dT){
   
     //std::cout << "Drone Rotation: "<< rotation << std::endl;
 
-    Tools::Vector3 totalF = FG + thrustGlobal;
+    Tools::Vector3 totalF = FG + thrustGlobal + aeroDrag;
     //std::cout << "TotalF: "<< totalF << std::endl;
     Tools::Vector3 acceleration = totalF / mass;
 
@@ -137,11 +141,11 @@ void Quadcopter::Update(float dt) {
 
     Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
 
-    std::cout << "Local Omega: " << localOmega << std::endl;
+    //std::cout << "Local Omega: " << localOmega << std::endl;
 
     Tools::Vector3 PID_out = PID.RatePID(gm_input_deadband, localOmega, dt);
 
-    std::cout << "PID_out: " << PID_out << std::endl;
+    //std::cout << "PID_out: " << PID_out << std::endl;
 
 
     // gm_input_deadband.pitch = 0;
@@ -196,6 +200,13 @@ void Quadcopter::Draw() {
 
 
 void Quadcopter::Draw2D() {
+
+    //Draw drone velocity
+
+    float HUD_y = GetScreenHeight() - 50;
+    
+    DrawText(("Velocity: " + std::to_string(velocity.magnitude())).c_str(), 10, HUD_y, 40, GREEN);
+
   
 
 }

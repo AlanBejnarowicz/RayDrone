@@ -64,5 +64,11 @@
   "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o -c /home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp",
   "file": "/home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o -c /home/alan/Documents/RayDrone/Objects/World/Gworld.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/World/Gworld.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o"
 }
 ]

@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alan/Documents/RayDrone/Objects/Drone/vIMU.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/GameObject.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o.d"
+  "/home/alan/Documents/RayDrone/Objects/World/Gworld.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/template_class.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o.d"
   "/home/alan/Documents/RayDrone/Tools/InputSystem.cpp" "CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o.d"
   "/home/alan/Documents/RayDrone/Tools/MyVector.cpp" "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o.d"

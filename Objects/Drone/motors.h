@@ -15,7 +15,7 @@ class Motors {
     float alpha = 0.45;
 
     // motors parameters
-    float motorThrust = 10.0;
+    float motorThrust = 11.0;
     float ThrustToTorque = 4.0;
 
     void Q4Mixer (float pitch, float roll, float yaw, float throttle);

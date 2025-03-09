@@ -174,7 +174,8 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/local/include/raylib.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /usr/local/include/raylib.h \
  /usr/local/include/raymath.h \
  /home/alan/Documents/RayDrone/Tools/InputSystem.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o.d"
+  "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o"
+  "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Tools/InputSystem.cpp.o"

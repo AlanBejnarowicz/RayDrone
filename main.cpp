@@ -24,21 +24,19 @@
 #include "Objects/GameObject.h"
 #include "Objects/VGamepad/VGamepad.h"
 #include "Objects/Drone/quadcopter.h"
+#include "Objects/World/Gworld.h"
+
 
 // main collection of GameObjects
 std::vector<std::unique_ptr<GameObject>> gameObjects;
-
-//change coordinate system
-
-
 
 
 int main() {
     
     // Camera and window initialization
 
-    const int screenWidth = 1600;
-    const int screenHeight = 1000;
+    const int screenWidth = 2000;
+    const int screenHeight = 1200;
     
     InitWindow(screenWidth, screenHeight, "RayDroneSim");
 
@@ -46,7 +44,7 @@ int main() {
     camera.position = { 0.0f, 5.0f, -10.0f }; // Like Unity (Camera starts behind)
     camera.target = { 0.0f, 2.0f, 0.0f };   // Looking towards +Z
     camera.up = { 0.0f, 1.0f, 0.0f };       // Keep Y-up (same as Unity)
-    camera.fovy = 60.0f;
+    camera.fovy = 90.0f;
     camera.projection = CAMERA_PERSPECTIVE;
 
     //CameraMode(camera, CAMERA_FREE); // Allows movement without fixed target
@@ -71,9 +69,9 @@ int main() {
     // #########################
     //  $$$$$ Init Objects $$$$$
 
-
     gameObjects.push_back(std::make_unique<VGamepad>(GMInputs));
     gameObjects.push_back(std::make_unique<Quadcopter>(GMInputs));
+    gameObjects.push_back(std::make_unique<GameWorld>());
 
 
     while (!WindowShouldClose()) {
@@ -106,7 +104,7 @@ int main() {
 
                 // up vector (positive Y) rotated by drone quaternion
                 Tools::Vector3 up = Tools::Vector3(0, 1, 0) * droneRotation.inverse();
-                camera.up = up;  // <-- This line enables roll rotation
+                camera.up = up;
             }
         }
 
@@ -121,7 +119,7 @@ int main() {
         BeginMode3D(camera);
 
 
-        DrawGrid(100, 1.0f);
+        DrawGrid(500, 0.25f);
 
         for (auto& obj : gameObjects) {
             obj->Draw();
@@ -136,7 +134,7 @@ int main() {
         }
 
 
-        DrawText("RayDroneSim V0.01", 10, 10, 20, DARKGRAY);
+        DrawText("RayDroneSim V0.02", 10, 10, 20, DARKGRAY);
         EndDrawing();
 
 

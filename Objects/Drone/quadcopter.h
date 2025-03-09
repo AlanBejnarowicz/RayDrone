@@ -5,6 +5,7 @@
 #include <iostream>
 #include <math.h>
 #include <vector>
+#include <sstream>
 
 #include <raylib.h>
 #include "raymath.h"
@@ -46,7 +47,7 @@ class Quadcopter : public GameObject {
 
 
     Tools::Vector3 gravity = {0, -9.81, 0};
-    float CX_coef = 0.01;
+    float CX_coef = 0.15;
 
     float JoystickDeadband = 0.05;
     Tools::GM_Inputs* gm_input = nullptr;

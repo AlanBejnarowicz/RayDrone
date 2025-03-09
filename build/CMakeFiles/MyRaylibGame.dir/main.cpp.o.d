@@ -326,6 +326,15 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: \
  /home/alan/Documents/RayDrone/Objects/GameObject.h \
  /home/alan/Documents/RayDrone/Tools/InputSystem.h \
  /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.h \
+ /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
  /home/alan/Documents/RayDrone/Objects/Drone/motors.h \
  /home/alan/Documents/RayDrone/Objects/Drone/vIMU.h \
- /home/alan/Documents/RayDrone/Objects/Drone/controller.h
+ /home/alan/Documents/RayDrone/Objects/Drone/controller.h \
+ /home/alan/Documents/RayDrone/Objects/World/Gworld.h \
+ /usr/local/include/rlgl.h /usr/include/c++/11/random \
+ /usr/include/c++/11/bits/random.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h

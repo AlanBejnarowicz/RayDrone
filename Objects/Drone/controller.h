@@ -15,7 +15,7 @@ class PIDController{
 
     private:
 
-        Tools::Vector3 MaxAngularSpeed = {10,10,10};
+        Tools::Vector3 MaxAngularSpeed = {7,7,7};
 
         float MaxIntegral = 0.2;
 
