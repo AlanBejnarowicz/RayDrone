@@ -21,7 +21,7 @@ class Quaternion {
         double x, y, z, w;
 
         // constructors
-        Quaternion(double w, double x, double y, double z);
+        Quaternion(double x, double y, double z, double w);
         Quaternion(); // default constructor
 
         ~Quaternion();

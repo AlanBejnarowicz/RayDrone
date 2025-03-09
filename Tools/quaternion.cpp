@@ -10,7 +10,7 @@ namespace Tools {
 
 
 
-    Quaternion::Quaternion(double w, double x, double y, double z){
+    Quaternion::Quaternion(double x, double y, double z, double w){
         this->w = w;
         this->x = x;
         this->y = y;
@@ -19,7 +19,7 @@ namespace Tools {
 
     Quaternion::Quaternion(void)
     {
-        this->w = 0;
+        this->w = 1;
         this->x = 0;
         this->y = 0;
         this->z = 0;
@@ -56,22 +56,26 @@ namespace Tools {
 
     // Normalization
     Quaternion Quaternion::normalize() const {
-        double m = magnitude();
-        return Quaternion(w / m, x / m, y / m, z / m);
+        double mag = magnitude();  // Use existing function
+        if (mag > 1e-10) {  // Small threshold to prevent division by zero
+            return Quaternion(x / mag, y / mag, z / mag, w / mag);
+        }
+        return Quaternion(0, 0, 0, 1);
     }
 
 
 
     // Conjugate
     Quaternion Quaternion::conjugate() const {
-        return Quaternion(w, -x, -y, -z);
+        return Quaternion(-x, -y, -z, w);
     }
 
     // Inverse
     Quaternion Quaternion::inverse() const {
+
         double mag = magnitude();
-        if (mag == 0) {
-            throw std::runtime_error("Cannot invert a quaternion with zero magnitude");
+        if (mag < 1e-10) {  // Prevent division by zero
+            return Quaternion(0, 0, 0, 1);  // Return identity quaternion
         }
         return conjugate() / (mag * mag);
     }
@@ -108,7 +112,7 @@ namespace Tools {
     // ########################################  FRIENDS  ########################################
     // Print function for Quaternion
     std::ostream& operator<<(std::ostream& os, const Quaternion& q) {
-        os << "(" << q.w << ", " << q.x << "i, " << q.y << "j, " << q.z << "k)";
+        os << "(" << q.x << "i, " << q.y << "j, " << q.z << "k, " << q.w << "w )";
         return os;
     }
 
@@ -121,47 +125,46 @@ namespace Tools {
     //Quaternion derivative
 
     Quaternion Quaternion::derivative(const Vector3 omegaB) const {
-        Quaternion q_dot;
-        q_dot.w = 0.5 * (-x * omegaB.x - y * omegaB.y - z * omegaB.z);
-        q_dot.x = 0.5 * (w * omegaB.x + y * omegaB.z - z * omegaB.y);
-        q_dot.y = 0.5 * (w * omegaB.y - x * omegaB.z + z * omegaB.x);
-        q_dot.z = 0.5 * (w * omegaB.z + x * omegaB.y - y * omegaB.x);
-        return q_dot;
-
+        Quaternion omega(omegaB.x, omegaB.y, omegaB.z, 0);
+        return (omega * (*this)) * 0.5; 
     }
 
     // Quaternion multiplication
     Quaternion Quaternion::operator*(const Quaternion& q) const {
         return Quaternion(
-            w * q.w - x * q.x - y * q.y - z * q.z,
-            w * q.x + x * q.w + y * q.z - z * q.y,
-            w * q.y - x * q.z + y * q.w + z * q.x,
-            w * q.z + x * q.y - y * q.x + z * q.w
+            w * q.x + x * q.w + y * q.z - z * q.y, // x component
+            w * q.y - x * q.z + y * q.w + z * q.x, // y component
+            w * q.z + x * q.y - y * q.x + z * q.w, // z component
+            w * q.w - x * q.x - y * q.y - z * q.z  // w component
         );
     }
 
     // Scalar multiplication
     Quaternion Quaternion::operator*(float scalar) const {
-        return Quaternion(w * scalar, x * scalar, y * scalar, z * scalar);
+        return Quaternion(x * scalar, y * scalar, z * scalar, w * scalar);
     }
 
     Quaternion Quaternion::operator+(const Quaternion& q) const {
-        return Quaternion(w + q.w, x + q.x, y + q.y, z + q.z);
+        return Quaternion(x + q.x, y + q.y, z + q.z, w + q.w);
     }
 
     Quaternion Quaternion::operator-(const Quaternion& q) const {
-        return Quaternion(w - q.w, x - q.x, y - q.y, z - q.z);
+        return Quaternion(x - q.x, y - q.y, z - q.z, w - q.w);
     }
 
 
     // Scalar division
     Quaternion Quaternion::operator/(float scalar) const {
-        return Quaternion(w / scalar, x / scalar, y / scalar, z / scalar);
+        return Quaternion(x / scalar, y / scalar, z / scalar, w / scalar);
     }
 
     // Equality check
     bool Quaternion::operator==(const Quaternion& q) const {
-        return w == q.w && x == q.x && y == q.y && z == q.z;
+        const double epsilon = 1e-6;  // Small threshold to compare floating points
+        return (fabs(w - q.w) < epsilon) &&
+               (fabs(x - q.x) < epsilon) &&
+               (fabs(y - q.y) < epsilon) &&
+               (fabs(z - q.z) < epsilon);
     }
 
 

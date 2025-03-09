@@ -3472,7 +3472,8 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
   /usr/local/include/raylib.h \
-  /usr/local/include/raymath.h
+  /usr/local/include/raymath.h \
+  /usr/local/include/rcamera.h
 
 
 /usr/include/c++/11/thread:
@@ -3802,6 +3803,8 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/11/bits/concept_check.h:
+
+/usr/local/include/rcamera.h:
 
 /usr/include/c++/11/bits/charconv.h:
 

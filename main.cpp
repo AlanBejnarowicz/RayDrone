@@ -1,4 +1,6 @@
 #include "raylib.h"
+#include "raymath.h"
+#include "rcamera.h"
 #include <SDL2/SDL.h>
 
 
@@ -26,6 +28,10 @@
 // main collection of GameObjects
 std::vector<std::unique_ptr<GameObject>> gameObjects;
 
+//change coordinate system
+
+
+
 
 int main() {
     
@@ -35,12 +41,16 @@ int main() {
     const int screenHeight = 1000;
     
     InitWindow(screenWidth, screenHeight, "RayDroneSim");
-    Camera camera = { 0 };
-    camera.position = (Vector3){ 10.0f, 10.0f, 10.0f }; 
-    camera.target = (Vector3){ 0.0f, 0.0f, 0.0f };
-    camera.up = (Vector3){ 0.0f, 1.0f, 0.0f };
+
+    Camera3D camera = { 0 };
+    camera.position = { 0.0f, 5.0f, -10.0f }; // Like Unity (Camera starts behind)
+    camera.target = { 0.0f, 2.0f, 0.0f };   // Looking towards +Z
+    camera.up = { 0.0f, 1.0f, 0.0f };       // Keep Y-up (same as Unity)
     camera.fovy = 60.0f;
     camera.projection = CAMERA_PERSPECTIVE;
+
+    //CameraMode(camera, CAMERA_FREE); // Allows movement without fixed target
+
 
     SetTargetFPS(120);
 
@@ -77,9 +87,31 @@ int main() {
             obj->Update(dt);
         }
         
+        //set camera to possition of drone, as FPV camera
+        // Assuming the first game object is the drone
+        if (!gameObjects.empty()) {
+            Quadcopter* drone = dynamic_cast<Quadcopter*>(gameObjects[1].get());
+            if (drone) {
+                Vector3 dronePosition = drone->position;
+                Tools::Quaternion droneRotation = drone->rotation;
+
+                // Set camera position to drone's position
+                camera.position = dronePosition;
+
+                // Forward direction for FPV camera is negative Z
+                Tools::Vector3 v = {0,0,1};
+                Tools::Vector3 camforward = v * droneRotation.inverse();
+                // Update camera target
+                camera.target = Vector3Add(camera.position, camforward);
+
+                // up vector (positive Y) rotated by drone quaternion
+                Tools::Vector3 up = Tools::Vector3(0, 1, 0) * droneRotation.inverse();
+                camera.up = up;  // <-- This line enables roll rotation
+            }
+        }
 
         // Update
-        UpdateCamera(&camera, CAMERA_ORBITAL);
+        UpdateCamera(&camera, CAMERA_FIRST_PERSON);
 
         // Draw
         BeginDrawing();

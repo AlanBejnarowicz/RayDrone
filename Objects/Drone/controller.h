@@ -17,9 +17,11 @@ class PIDController{
 
         Tools::Vector3 MaxAngularSpeed = {10,10,10};
 
+        float MaxIntegral = 0.2;
 
         // Rate controller
         Tools::Vector3 RateI;
+        Tools::Vector3 RateD = {0,0,0};
         Tools::Vector3 RateLastError;
 
 
@@ -28,11 +30,11 @@ class PIDController{
         PIDController();
         ~PIDController();
 
-        float DtermAlpha = 0.2;
+        float DtermAlpha = 0.7;
 
         //Rate PID values
-        Tools::Vector3 Kp_Rate = {1,1,1};
-        Tools::Vector3 Ki_Rate = {0.1,0.1,0.1};
+        Tools::Vector3 Kp_Rate = {0.3,0.3,0.3};
+        Tools::Vector3 Ki_Rate = {0.01,0.01,0.01};
         Tools::Vector3 Kd_Rate = {0.01, 0.01, 0.01};
 
 

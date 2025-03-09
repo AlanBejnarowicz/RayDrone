@@ -91,20 +91,27 @@ namespace Tools {
     }
 
 
-    // Vector Quaterinon multiplication
+    // Rotate Vector by Quaterinon
     Vector3 Vector3::operator*(const Quaternion& q) const{
-        Quaternion v_quat(0, x, y, z);
-        Quaternion result = q * v_quat * q.conjugate();
-        return Vector3(result.x, result.y, result.z);
+        Quaternion vQ(x, y, z, 0);
+        Quaternion res = (q * vQ * q.conjugate());  // Correct multiplication order
+        return Vector3(res.x, res.y, res.z);
     }
 
 
-       // Scalar multiplication
-       Vector3 Vector3::operator^(const Vector3& q) const {
+    Vector3 operator*(const Quaternion& q, const Vector3& v) {
+        Quaternion vQ(v.x, v.y, v.z, 0);
+        Quaternion res = q * vQ * q.conjugate();
+        return Vector3(res.x, res.y, res.z);
+    }
+    
+
+
+    Vector3 Vector3::cross(const Vector3& q) const {
         return Vector3(
-            y * q.z - z * q.y,
-            z * q.x - x * q.z,
-            x * q.y - y * q.x
+            y * q.z - z * q.y,  // x component
+            z * q.x - x * q.z,  // y component
+            x * q.y - y * q.x   // z component
         );
     }
 

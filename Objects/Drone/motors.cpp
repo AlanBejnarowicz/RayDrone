@@ -17,16 +17,16 @@ void Motors::UpdateMotors(Tools::GM_Inputs input){
 
     Used Motor arangement
 
-        1 --- 2
+        0 --- 1
            #
-        3 --- 4
+        2 --- 3
 
 */
    
 
 
     // apply mixer
-    Q4Mixer(input.yaw, input.pitch, input.roll, input.throttle);
+    Q4Mixer(input.pitch, input.yaw, input.roll, input.throttle);
 
     // simulate motors with alpha-beta filter
     for(int i = 0; i <4; i++){
@@ -38,9 +38,10 @@ void Motors::UpdateMotors(Tools::GM_Inputs input){
     vertical_thrust = (motors[0] + motors[1] + motors[2] + motors[3]) * motorThrust;
 
     // calculate momentums
-    momentums.x = (motors[3] + motors[4]) - (motors[1] + motors[2]); // pitch
-    momentums.y = (motors[1] + motors[4]) - (motors[3] + motors[2]); // yaw
-    momentums.z = (motors[1] + motors[3]) - (motors[4] + motors[2]); // roll
+    momentums.x = (motors[2] + motors[3]) - (motors[1] + motors[0]); // Pitch
+    momentums.y = (motors[0] + motors[3]) - (motors[1] + motors[2]); // Yaw
+    momentums.z = (motors[0] + motors[2]) - (motors[1] + motors[3]); // Roll
+
 
     momentums = momentums * ThrustToTorque;
 

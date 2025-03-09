@@ -26,7 +26,8 @@ void Quadcopter::Start(void){
         // ensure zero start conditions
         position = {0,0,0};
         last_possition = position;
-        rotation = {1,0,0,0};
+        rotation = {0, 0, 0, 1};
+        rotation = rotation.normalize();
         velocity = {0,0,0};
         
         //precompute diagonal inverse inertia
@@ -44,9 +45,6 @@ void Quadcopter::Start(void){
 
         // load mesh for drone
         droneMesh = GenMeshCube(1.0f, 0.25f, 1.0f);
-
-
-
 
 
 
@@ -92,27 +90,29 @@ void Quadcopter::UpdateDronePhysics(float dT){
 
     // calculate thrust in local coordinates
     
-    Tools::Vector3 thrustGlobal = thrustBody * rotation;
-    //std::cout << "Thrust Global: "<< thrustGlobal << std::endl;
+    Tools::Vector3 thrustGlobal = thrustBody * rotation.inverse();
+  
+    //std::cout << "Drone Rotation: "<< rotation << std::endl;
 
     Tools::Vector3 totalF = FG + thrustGlobal;
+    //std::cout << "TotalF: "<< totalF << std::endl;
     Tools::Vector3 acceleration = totalF / mass;
 
     // integrate acceleration velocity to possition
     velocity = velocity + acceleration * dT;
     position = position + velocity * dT;
 
-
     // Rotation
     Tools::Vector3 omegaBody = angularMomentumBody * invInertiaDiag;
 
     //cross produvt of omegaBody and angularMomentumBody
-    Tools::Vector3 crossTerm = omegaBody ^ angularMomentumBody;
+    Tools::Vector3 crossTerm = omegaBody.cross(angularMomentumBody);
 
+    //Tools::Vector3 dLdT = (Q4Motors.momentums * rotation.inverse()) - crossTerm;
     Tools::Vector3 dLdT = Q4Motors.momentums - crossTerm;
 
     // integrate angular momentum
-    angularMomentumBody = angularMomentumBody + dLdT * dT;
+    angularMomentumBody = angularMomentumBody + (dLdT * dT);
 
     // update omega body
     omegaBody = angularMomentumBody * invInertiaDiag;
@@ -127,26 +127,12 @@ void Quadcopter::UpdateDronePhysics(float dT){
 
 
 
-void Quadcopter::DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, Tools::Vector3 size, Wireframe3D *wireframe) {
-    // Apply rotation and move it to position
-    Matrix transform = MatrixMultiply(rotation.RotationMatrix(), MatrixTranslate(pos.x, pos.y, pos.z));
-    
-    // Draw the cube mesh with red color
-    Material material = LoadMaterialDefault();
-    material.maps[MATERIAL_MAP_DIFFUSE].color = RED;
-    DrawMesh(droneMesh, material, transform);
-
-
-}
-
-
-
-
 
 
 
 // GameObject methods
 void Quadcopter::Update(float dt) {
+    
     apply_deadband();
 
     Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
@@ -157,11 +143,15 @@ void Quadcopter::Update(float dt) {
 
     std::cout << "PID_out: " << PID_out << std::endl;
 
-    //gm_input_deadband.pitch = PID_out.x;
-    gm_input_deadband.yaw = PID_out.x;
-    //gm_input_deadband.roll = PID_out.z;
 
-    std::cout<<"yaw: " << gm_input_deadband.roll << std::endl;
+    // gm_input_deadband.pitch = 0;
+    gm_input_deadband.yaw = 0;
+    gm_input_deadband.roll = 0;
+
+
+    gm_input_deadband.pitch = PID_out.x;
+    gm_input_deadband.yaw = PID_out.z;
+     gm_input_deadband.roll = PID_out.y;
 
     Q4Motors.UpdateMotors(gm_input_deadband);
 
@@ -175,6 +165,20 @@ void Quadcopter::Update(float dt) {
 
 }
 
+
+void Quadcopter::DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, Tools::Vector3 size, Wireframe3D *wireframe) {
+
+    //Tools::Quaternion fixedQuat = rotation * UnityCoordinate;
+    // Apply rotation and move it to position
+    Matrix transform = MatrixMultiply(rotation.RotationMatrix(), MatrixTranslate(pos.x, pos.y, pos.z));
+    
+    // Draw the cube mesh with red color
+    Material material = LoadMaterialDefault();
+    material.maps[MATERIAL_MAP_DIFFUSE].color = RED;
+    DrawMesh(droneMesh, material, transform);
+
+
+}
 
 
 
@@ -192,6 +196,6 @@ void Quadcopter::Draw() {
 
 
 void Quadcopter::Draw2D() {
-   
+  
 
 }

@@ -3484,4 +3484,5 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h
  /usr/local/include/raylib.h
  /usr/local/include/raymath.h
+ /usr/local/include/rcamera.h
 

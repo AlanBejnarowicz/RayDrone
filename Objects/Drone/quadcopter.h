@@ -64,6 +64,9 @@ class Quadcopter : public GameObject {
     Wireframe3D droneModel;
     Mesh droneMesh;
 
+    // Define a quaternion for rotation (-Yaw for left-handed system)
+    Tools::Quaternion UnityCoordinate = QuaternionFromEuler(0.0f, -PI / 4.0f, 0.0f);
+
 
 
     public:

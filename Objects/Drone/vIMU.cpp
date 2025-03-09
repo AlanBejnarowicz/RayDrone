@@ -21,14 +21,16 @@ Tools::Vector3 vIMU::SimulateGyro(Tools::Quaternion rotation, float dT){
 
     // calculating difference between Quaternions
     Tools::Quaternion qDelta = rotation * last_rotation.inverse();
+    //qDelta = qDelta.normalize();
 
-    // std::cout << "qDelta: "<< qDelta <<std::endl; 
 
-    last_rotation = rotation;
+    last_rotation = rotation.normalize();  // Ensure unit quaternion
+
 
     // extract w and v
     float w = qDelta.w;
-    Tools::Vector3 v = qDelta;
+    Tools::Vector3 v(qDelta.x, qDelta.y, qDelta.z);
+
 
     float epsilon = 1e-8f;
     float cosHalfAngle = std::max(-1.0f, std::min(w, 1.0f));
@@ -39,14 +41,9 @@ Tools::Vector3 vIMU::SimulateGyro(Tools::Quaternion rotation, float dT){
 
 
     Tools::Vector3 axis;
-    if (abs(sinHalfAngle) > epsilon)
-    {
-        axis = v / sinHalfAngle; // normalizing
-    }
-    else
-    {
-        // Fallback: if angle~0, use v directly or default axis
-        // (the direction won't matter if angle is tiny)
+    if (fabs(sinHalfAngle) > epsilon) {
+        axis = v / sinHalfAngle;
+    } else {
         axis = {1.0f, 0, 0}; // arbitrary
     }
 
@@ -55,14 +52,16 @@ Tools::Vector3 vIMU::SimulateGyro(Tools::Quaternion rotation, float dT){
     float rate = angle / dT;
     Tools::Vector3 omega = axis * rate;
 
-     // Convert to drone's local frame
-    Tools::Vector3 localOmega = omega * rotation;
+    // Convert to drone's local frame
+    Tools::Vector3 localOmega = rotation * omega * rotation.inverse();
+
+    localOmega.z = -localOmega.z;
     
     // convert to (roll pitch yaw)  from (pitch, yaw, roll)
-    Tools::Vector3 RPYlocalOmega = {localOmega.z, localOmega.x, localOmega.y};
+    //Tools::Vector3 RPYlocalOmega = {localOmega.x, localOmega.y, -localOmega.z};
 
 
-    return RPYlocalOmega;
+    return localOmega;
 }
 
 

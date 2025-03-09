@@ -31,6 +31,7 @@ namespace Tools {
             // functions
             double magnitude() const;
             Vector3 normalize() const;
+            Vector3 cross(const Vector3& q) const;
 
 
             //compatibility 
@@ -52,12 +53,14 @@ namespace Tools {
 
             // Rotate Vector by Quaternion
             Vector3 operator*(const Quaternion& q) const;
+            
+
 
             //divide by scalar
             Vector3 operator/(float scalar) const;
 
             //cross product
-            Vector3 operator^(const Vector3& q) const;
+            //Vector3 operator^(const Vector3& q) const;
 
             // is equal?
             bool operator==(const Vector3& q) const;
@@ -69,6 +72,8 @@ namespace Tools {
 
     };
 
+
+    Vector3 operator*(const Quaternion& q, const Vector3& v);
 
 
 
