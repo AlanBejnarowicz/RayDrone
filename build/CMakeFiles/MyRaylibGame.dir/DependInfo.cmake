@@ -9,10 +9,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alan/Documents/RayDrone/Objects/Drone/controller.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o.d"
+  "/home/alan/Documents/RayDrone/Objects/Drone/mahony.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/Drone/motors.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/Drone/vIMU.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/GameObject.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d"
+  "/home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/World/Gworld.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o.d"
   "/home/alan/Documents/RayDrone/Objects/template_class.cpp" "CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o" "gcc" "CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o.d"

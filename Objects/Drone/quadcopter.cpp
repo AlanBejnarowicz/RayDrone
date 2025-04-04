@@ -48,6 +48,10 @@ void Quadcopter::Start(void){
         droneMesh = GenMeshCube(1.0f, 0.25f, 1.0f);
 
 
+        //init Mahony Filter
+        
+
+
 
 }
 
@@ -139,25 +143,53 @@ void Quadcopter::Update(float dt) {
     
     apply_deadband();
 
-    Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
+    #ifndef TRAJECTORY_CONTROL
 
-    //std::cout << "Local Omega: " << localOmega << std::endl;
+        Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
+        Tools::Vector3 localAcc = virtualIMU.SimulateAccelerometer(rotation, velocity, dt);
 
-    Tools::Vector3 PID_out = PID.RatePID(gm_input_deadband, localOmega, dt);
+        //std::cout << "Local Omega: " << localOmega << std::endl;
+        //std::cout << "Local Acc: " << localAcc << "    magnitude: "<<localAcc.magnitude() << std::endl;
 
-    //std::cout << "PID_out: " << PID_out << std::endl;
+        est_rot = mahony_filter.perform_mahony_fusion_6DOF(localAcc, localOmega, est_rot, dt);
+        std::cout << "Mahony est Eulers: " <<est_rot.ToEuler() * 180 / PI << std::endl;
+
+        // Tools::Vector3 PID_out = PID.RatePID(gm_input_deadband, localOmega, dt);
+
+        // gm_input_deadband.pitch = PID_out.x;
+        // gm_input_deadband.yaw = PID_out.z;
+        // gm_input_deadband.roll = PID_out.y;
+
+        double ref_pitch = gm_input_deadband.pitch;
+        double ref_yaw = gm_input_deadband.yaw;
+        double ref_roll = gm_input_deadband.roll;
 
 
-    // gm_input_deadband.pitch = 0;
-    gm_input_deadband.yaw = 0;
-    gm_input_deadband.roll = 0;
+        Tools::Quaternion q_ref(ref_pitch, ref_yaw, ref_roll);
+        std::cout <<"Qref: " << q_ref.ToEuler() * 180 / PI << std::endl;
 
+        Tools::Vector3 QCntrl_Out = QCntrl.QControllerUpdate(q_ref, est_rot, localOmega, dt);
 
-    gm_input_deadband.pitch = PID_out.x;
-    gm_input_deadband.yaw = PID_out.z;
-     gm_input_deadband.roll = PID_out.y;
+        std::cout <<"Quaternion Controller Out: " << QCntrl_Out << std::endl;
 
-    Q4Motors.UpdateMotors(gm_input_deadband);
+        gm_input_deadband.pitch = QCntrl_Out.x;
+        gm_input_deadband.yaw = 0;
+        gm_input_deadband.roll = 0;
+
+        Q4Motors.UpdateMotors(gm_input_deadband);
+
+    #else
+
+        Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
+        std::cout << "Local Omega: " << localOmega << std::endl;
+
+        gm_input_deadband.pitch = 0.2;
+        gm_input_deadband.yaw = 0;
+        gm_input_deadband.roll = 0;
+
+        Q4Motors.UpdateMotors(gm_input_deadband);
+
+    #endif
 
     UpdateDronePhysics(dt);
 
@@ -170,9 +202,9 @@ void Quadcopter::Update(float dt) {
 }
 
 
-void Quadcopter::DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, Tools::Vector3 size, Wireframe3D *wireframe) {
+void Quadcopter::DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, Tools::Vector3 size ){
 
-    //Tools::Quaternion fixedQuat = rotation * UnityCoordinate;
+    
     // Apply rotation and move it to position
     Matrix transform = MatrixMultiply(rotation.RotationMatrix(), MatrixTranslate(pos.x, pos.y, pos.z));
     
@@ -185,15 +217,13 @@ void Quadcopter::DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, To
 }
 
 
-
-
 void Quadcopter::Draw() {
 
     Vector3 r_pos = {position.x, position.y, position.z};
     //DrawCubeWires(r_pos, 1.0, 0.2, 1.0 , GREEN);
 
     Tools::Vector3 size = {1,1,1};
-    DrawDrone3D(position,rotation,size,&droneModel);
+    DrawDrone3D(position,rotation,size);
 
 }
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o.d"
+  "CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o"
+  "CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d"
+  "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o"
+  "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o"

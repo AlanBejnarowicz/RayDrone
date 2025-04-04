@@ -65,3 +65,16 @@ Tools::Vector3 vIMU::SimulateGyro(Tools::Quaternion rotation, float dT){
 }
 
 
+Tools::Vector3 vIMU::SimulateAccelerometer(Tools::Quaternion rotation, Tools::Vector3 vel, float dT){
+
+    Tools::Vector3 acc_global = (vel - last_vel) / dT;
+    last_vel = vel;
+
+    //add gravity
+    acc_global = acc_global - GRAV;
+
+    //convert acc_global to local frame
+    Tools::Vector3 acc_local = acc_global * rotation.inverse();
+
+    return acc_local;
+}

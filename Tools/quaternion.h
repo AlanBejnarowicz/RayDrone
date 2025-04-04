@@ -4,12 +4,21 @@
 
 #include <iostream>
 #include <math.h>
+#include <algorithm>
 
 #include <raylib.h>
 
 #include "MyVector.h"
 
 namespace Tools {
+
+
+// axis angle struct
+struct AxisAngle
+{
+    float angle = 0;
+    Vector3 axis;
+};
 
 class Vector3;
 
@@ -22,6 +31,7 @@ class Quaternion {
 
         // constructors
         Quaternion(double x, double y, double z, double w);
+        Quaternion(double yaw, double pitch, double roll);
         Quaternion(); // default constructor
 
         ~Quaternion();
@@ -34,6 +44,9 @@ class Quaternion {
         Quaternion inverse() const;
         Matrix RotationMatrix() const;
 
+
+        AxisAngle ToAxisAngle() const;
+        Vector3 ToEuler() const;
 
         // quaternion derivative
         Quaternion derivative(const Vector3 omegaB) const;

@@ -57,3 +57,64 @@ Tools::Vector3 PIDController::RatePID(Tools::GM_Inputs GMinput, Tools::Vector3 g
         return omega;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////
+// QUATERNIONS
+//////////////////////////////////////
+
+
+QuaternionController::QuaternionController(){
+
+
+}
+
+
+QuaternionController::~QuaternionController(){
+
+
+}
+
+
+Tools::Vector3 QuaternionController::QControllerUpdate(Tools::Quaternion q_ref, Tools::Quaternion rotation, Tools::Vector3 omega, float dT){
+
+    // 1. Calculate error quaternion q_err = q_ref * conj(q_meas)
+    Tools::Quaternion q_err = q_ref * rotation.conjugate();
+    q_err = q_err.normalize();
+
+    // 2. Convert to axis-angle
+    Tools::AxisAngle q_axag;
+    q_axag = q_err.ToAxisAngle();
+    Tools::Vector3 axis = q_axag.axis;
+
+    std::cout << "Axis: " << axis << "   Angle: " << q_axag.angle << std::endl;
+
+    // // 3. Proportional torque: -Kp * angle * axis
+    // //    negative sign => if angle>0, we want to push back
+    // Tools::Vector3 axis = q_axag.axis;
+    // Tools::Vector3 tau_p = axis * (-Kp * q_axag.angle);
+
+    // // 4. Derivative torque for rate damping: -Kd * omega_meas
+    // Tools:: Vector3 tau_d = omega * (-Kd);
+
+    // // net torque
+    // Tools::Vector3 tau = tau_p + tau_d;
+
+
+    Tools::Vector3 tau;
+
+    return tau;
+
+
+}

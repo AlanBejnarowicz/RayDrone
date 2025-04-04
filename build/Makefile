@@ -153,6 +153,30 @@ Objects/Drone/controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.s
 .PHONY : Objects/Drone/controller.cpp.s
 
+Objects/Drone/mahony.o: Objects/Drone/mahony.cpp.o
+.PHONY : Objects/Drone/mahony.o
+
+# target to build an object file
+Objects/Drone/mahony.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o
+.PHONY : Objects/Drone/mahony.cpp.o
+
+Objects/Drone/mahony.i: Objects/Drone/mahony.cpp.i
+.PHONY : Objects/Drone/mahony.i
+
+# target to preprocess a source file
+Objects/Drone/mahony.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.i
+.PHONY : Objects/Drone/mahony.cpp.i
+
+Objects/Drone/mahony.s: Objects/Drone/mahony.cpp.s
+.PHONY : Objects/Drone/mahony.s
+
+# target to generate assembly for a file
+Objects/Drone/mahony.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.s
+.PHONY : Objects/Drone/mahony.cpp.s
+
 Objects/Drone/motors.o: Objects/Drone/motors.cpp.o
 .PHONY : Objects/Drone/motors.o
 
@@ -248,6 +272,30 @@ Objects/GameObject.s: Objects/GameObject.cpp.s
 Objects/GameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.s
 .PHONY : Objects/GameObject.cpp.s
+
+Objects/MainCamera/main_camera.o: Objects/MainCamera/main_camera.cpp.o
+.PHONY : Objects/MainCamera/main_camera.o
+
+# target to build an object file
+Objects/MainCamera/main_camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o
+.PHONY : Objects/MainCamera/main_camera.cpp.o
+
+Objects/MainCamera/main_camera.i: Objects/MainCamera/main_camera.cpp.i
+.PHONY : Objects/MainCamera/main_camera.i
+
+# target to preprocess a source file
+Objects/MainCamera/main_camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.i
+.PHONY : Objects/MainCamera/main_camera.cpp.i
+
+Objects/MainCamera/main_camera.s: Objects/MainCamera/main_camera.cpp.s
+.PHONY : Objects/MainCamera/main_camera.s
+
+# target to generate assembly for a file
+Objects/MainCamera/main_camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.s
+.PHONY : Objects/MainCamera/main_camera.cpp.s
 
 Objects/VGamepad/VGamepad.o: Objects/VGamepad/VGamepad.cpp.o
 .PHONY : Objects/VGamepad/VGamepad.o
@@ -429,6 +477,9 @@ help:
 	@echo "... Objects/Drone/controller.o"
 	@echo "... Objects/Drone/controller.i"
 	@echo "... Objects/Drone/controller.s"
+	@echo "... Objects/Drone/mahony.o"
+	@echo "... Objects/Drone/mahony.i"
+	@echo "... Objects/Drone/mahony.s"
 	@echo "... Objects/Drone/motors.o"
 	@echo "... Objects/Drone/motors.i"
 	@echo "... Objects/Drone/motors.s"
@@ -441,6 +492,9 @@ help:
 	@echo "... Objects/GameObject.o"
 	@echo "... Objects/GameObject.i"
 	@echo "... Objects/GameObject.s"
+	@echo "... Objects/MainCamera/main_camera.o"
+	@echo "... Objects/MainCamera/main_camera.i"
+	@echo "... Objects/MainCamera/main_camera.s"
 	@echo "... Objects/VGamepad/VGamepad.o"
 	@echo "... Objects/VGamepad/VGamepad.i"
 	@echo "... Objects/VGamepad/VGamepad.s"

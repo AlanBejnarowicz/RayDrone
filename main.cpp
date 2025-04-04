@@ -1,7 +1,9 @@
 #include "raylib.h"
 #include "raymath.h"
 #include "rcamera.h"
+
 #include <SDL2/SDL.h>
+#include <omp.h>      
 
 
 #include <thread>
@@ -25,10 +27,13 @@
 #include "Objects/VGamepad/VGamepad.h"
 #include "Objects/Drone/quadcopter.h"
 #include "Objects/World/Gworld.h"
+#include "MainCamera/main_camera.h"
 
 
 // main collection of GameObjects
 std::vector<std::unique_ptr<GameObject>> gameObjects;
+
+
 
 
 int main() {
@@ -37,18 +42,11 @@ int main() {
 
     const int screenWidth = 2000;
     const int screenHeight = 1200;
+
+    SetConfigFlags(FLAG_MSAA_4X_HINT);      // Enable Multi Sampling Anti Aliasing 4x (if available)
+
     
     InitWindow(screenWidth, screenHeight, "RayDroneSim");
-
-    Camera3D camera = { 0 };
-    camera.position = { 0.0f, 5.0f, -10.0f }; // Like Unity (Camera starts behind)
-    camera.target = { 0.0f, 2.0f, 0.0f };   // Looking towards +Z
-    camera.up = { 0.0f, 1.0f, 0.0f };       // Keep Y-up (same as Unity)
-    camera.fovy = 90.0f;
-    camera.projection = CAMERA_PERSPECTIVE;
-
-    //CameraMode(camera, CAMERA_FREE); // Allows movement without fixed target
-
 
     SetTargetFPS(120);
 
@@ -71,7 +69,9 @@ int main() {
 
     gameObjects.push_back(std::make_unique<VGamepad>(GMInputs));
     gameObjects.push_back(std::make_unique<Quadcopter>(GMInputs));
-    gameObjects.push_back(std::make_unique<GameWorld>());
+    //gameObjects.push_back(std::make_unique<GameWorld>());
+
+    MainCamera mainCamera(gameObjects[1].get());
 
 
     while (!WindowShouldClose()) {
@@ -80,43 +80,21 @@ int main() {
         // Handle SDL input for gamepad
         Input_System.HandleGamepadInput();
 
-        // Update objects
-        for (auto& obj : gameObjects) {
-            obj->Update(dt);
+        // Parallel update
+        #pragma omp parallel for
+        for (int i = 0; i < static_cast<int>(gameObjects.size()); i++) {
+            gameObjects[i]->Update(dt);
         }
+
+        mainCamera.Update(dt);
         
-        //set camera to possition of drone, as FPV camera
-        // Assuming the first game object is the drone
-        if (!gameObjects.empty()) {
-            Quadcopter* drone = dynamic_cast<Quadcopter*>(gameObjects[1].get());
-            if (drone) {
-                Vector3 dronePosition = drone->position;
-                Tools::Quaternion droneRotation = drone->rotation;
-
-                // Set camera position to drone's position
-                camera.position = dronePosition;
-
-                // Forward direction for FPV camera is negative Z
-                Tools::Vector3 v = {0,0,1};
-                Tools::Vector3 camforward = v * droneRotation.inverse();
-                // Update camera target
-                camera.target = Vector3Add(camera.position, camforward);
-
-                // up vector (positive Y) rotated by drone quaternion
-                Tools::Vector3 up = Tools::Vector3(0, 1, 0) * droneRotation.inverse();
-                camera.up = up;
-            }
-        }
-
-        // Update
-        UpdateCamera(&camera, CAMERA_FIRST_PERSON);
 
         // Draw
         BeginDrawing();
 
 
         ClearBackground(RAYWHITE);
-        BeginMode3D(camera);
+        BeginMode3D(mainCamera.camera);
 
 
         DrawGrid(500, 0.25f);
@@ -133,6 +111,7 @@ int main() {
             obj->Draw2D();
         }
 
+        mainCamera.Draw2D();
 
         DrawText("RayDroneSim V0.02", 10, 10, 20, DARKGRAY);
         EndDrawing();

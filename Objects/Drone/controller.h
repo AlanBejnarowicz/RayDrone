@@ -46,4 +46,28 @@ class PIDController{
 };
 
 
+
+
+
+
+
+class QuaternionController {
+    private:
+
+
+    public:
+
+        double Kp = 1.0;                   // proportional gain
+        double Kd = 0.1;                   // derivative (rate) gain
+
+        QuaternionController();
+        ~QuaternionController();
+
+        //methods
+        Tools::Vector3 QControllerUpdate(Tools::Quaternion q_ref, Tools::Quaternion rotation, Tools::Vector3 omega, float dT);
+
+
+};
+
+
 #endif

@@ -58,7 +58,10 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o: /home/alan/Documents
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/array \
   /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/basic_ios.h \
@@ -71,12 +74,17 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o: /home/alan/Documents
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -87,28 +95,38 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o: /home/alan/Documents
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
@@ -122,12 +140,14 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o: /home/alan/Documents
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -137,6 +157,8 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o: /home/alan/Documents
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/stdlib.h \
@@ -156,8 +178,11 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o: /home/alan/Documents
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -357,6 +382,247 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/controller.cpp.o: /home/alan/Documents
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
   /usr/local/include/raylib.h
 
+CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o: /home/alan/Documents/RayDrone/Objects/Drone/mahony.cpp \
+  /home/alan/Documents/RayDrone/Objects/Drone/mahony.h \
+  /home/alan/Documents/RayDrone/Tools/MyVector.h \
+  /home/alan/Documents/RayDrone/Tools/quaternion.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/cctype \
+  /usr/include/c++/11/cerrno \
+  /usr/include/c++/11/clocale \
+  /usr/include/c++/11/cmath \
+  /usr/include/c++/11/cstdint \
+  /usr/include/c++/11/cstdio \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cwchar \
+  /usr/include/c++/11/cwctype \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/system_error \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/raylib.h
+
 CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp \
   /home/alan/Documents/RayDrone/Objects/Drone/motors.h \
   /home/alan/Documents/RayDrone/Tools/InputSystem.h \
@@ -414,7 +680,10 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/Ray
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/array \
   /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/basic_ios.h \
@@ -427,12 +696,17 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -443,25 +717,39 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/clocale \
@@ -474,12 +762,14 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -489,6 +779,8 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/stdlib.h \
@@ -508,8 +800,12 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -710,6 +1006,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o: /home/alan/Documents/Ray
 
 CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp \
   /home/alan/Documents/RayDrone/Objects/Drone/controller.h \
+  /home/alan/Documents/RayDrone/Objects/Drone/mahony.h \
   /home/alan/Documents/RayDrone/Objects/Drone/motors.h \
   /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.h \
   /home/alan/Documents/RayDrone/Objects/Drone/vIMU.h \
@@ -769,10 +1066,12 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -789,12 +1088,16 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
@@ -806,6 +1109,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -819,10 +1123,13 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
@@ -836,7 +1143,9 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
@@ -859,6 +1168,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -870,6 +1180,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/sstream \
@@ -894,6 +1205,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/quadcopter.cpp.o: /home/alan/Documents
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
@@ -1102,7 +1414,10 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o: /home/alan/Documents/RayDr
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/array \
   /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/basic_ios.h \
@@ -1115,12 +1430,17 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -1131,28 +1451,38 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
@@ -1166,12 +1496,14 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -1181,6 +1513,8 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
@@ -1199,8 +1533,11 @@ CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -1318,10 +1655,12 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -1338,12 +1677,16 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
@@ -1355,6 +1698,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -1367,10 +1711,13 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
@@ -1384,7 +1731,9 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
@@ -1407,6 +1756,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -1418,6 +1768,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
@@ -1440,6 +1791,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
@@ -1551,6 +1903,264 @@ CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o: /home/alan/Documents/RayDr
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/local/include/raylib.h
 
+CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o: /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.cpp \
+  /home/alan/Documents/RayDrone/Objects/GameObject.h \
+  /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.h \
+  /home/alan/Documents/RayDrone/Tools/MyVector.h \
+  /home/alan/Documents/RayDrone/Tools/quaternion.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/concept_check.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/exception_defines.h \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/move.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_iterator.h \
+  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/c++/11/bits/string_view.tcc \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/cctype \
+  /usr/include/c++/11/cerrno \
+  /usr/include/c++/11/clocale \
+  /usr/include/c++/11/cmath \
+  /usr/include/c++/11/cstdint \
+  /usr/include/c++/11/cstdio \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cwchar \
+  /usr/include/c++/11/cwctype \
+  /usr/include/c++/11/debug/assertions.h \
+  /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/string_view \
+  /usr/include/c++/11/system_error \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/local/include/raylib.h \
+  /usr/local/include/raymath.h \
+  /usr/local/include/rcamera.h
+
 CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp \
   /home/alan/Documents/RayDrone/Objects/GameObject.h \
   /home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.h \
@@ -1609,10 +2219,12 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -1629,12 +2241,16 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
@@ -1646,6 +2262,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -1658,10 +2275,13 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
@@ -1675,7 +2295,9 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
@@ -1698,6 +2320,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -1709,6 +2332,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
@@ -1732,6 +2356,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o: /home/alan/Document
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
@@ -1940,10 +2565,13 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \
+  /usr/include/c++/11/atomic \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -1960,12 +2588,16 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
@@ -1977,6 +2609,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -1991,10 +2624,13 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
@@ -2005,26 +2641,31 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/clocale \
   /usr/include/c++/11/cmath \
+  /usr/include/c++/11/cstddef \
   /usr/include/c++/11/cstdint \
   /usr/include/c++/11/cstdio \
   /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cstring \
   /usr/include/c++/11/cwchar \
   /usr/include/c++/11/cwctype \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
+  /usr/include/c++/11/execution \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/ext/atomicity.h \
@@ -2033,21 +2674,40 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
+  /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/algorithm_fwd.h \
+  /usr/include/c++/11/pstl/algorithm_impl.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/execution_impl.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_impl.h \
+  /usr/include/c++/11/pstl/glue_execution_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/glue_memory_impl.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  /usr/include/c++/11/pstl/glue_numeric_impl.h \
+  /usr/include/c++/11/pstl/memory_impl.h \
+  /usr/include/c++/11/pstl/numeric_fwd.h \
+  /usr/include/c++/11/pstl/numeric_impl.h \
+  /usr/include/c++/11/pstl/parallel_backend.h \
+  /usr/include/c++/11/pstl/parallel_backend_serial.h \
+  /usr/include/c++/11/pstl/parallel_backend_utils.h \
+  /usr/include/c++/11/pstl/parallel_impl.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/pstl/unseq_backend_simd.h \
+  /usr/include/c++/11/pstl/utils.h \
   /usr/include/c++/11/random \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
@@ -2069,6 +2729,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
@@ -2085,6 +2746,8 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
@@ -2180,6 +2843,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/World/Gworld.cpp.o: /home/alan/Documents/Ray
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/local/include/raylib.h \
+  /usr/local/include/raymath.h \
   /usr/local/include/rlgl.h
 
 CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/RayDrone/Objects/template_class.cpp \
@@ -2239,10 +2903,12 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -2259,12 +2925,16 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
@@ -2276,6 +2946,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -2288,10 +2959,13 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
@@ -2305,7 +2979,9 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
@@ -2328,6 +3004,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -2339,6 +3016,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
@@ -2362,6 +3040,7 @@ CMakeFiles/MyRaylibGame.dir/Objects/template_class.cpp.o: /home/alan/Documents/R
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
@@ -2915,7 +3594,10 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/array \
   /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/basic_ios.h \
@@ -2928,12 +3610,17 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -2944,25 +3631,39 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/clocale \
@@ -2975,12 +3676,14 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -2990,6 +3693,8 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
@@ -3008,8 +3713,12 @@ CMakeFiles/MyRaylibGame.dir/Tools/MyVector.cpp.o: /home/alan/Documents/RayDrone/
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3125,7 +3834,10 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDron
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/array \
   /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/basic_ios.h \
@@ -3138,12 +3850,17 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDron
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -3154,25 +3871,39 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDron
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/clocale \
@@ -3185,12 +3916,14 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDron
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
@@ -3200,6 +3933,8 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDron
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
@@ -3218,8 +3953,12 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDron
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3331,10 +4070,12 @@ CMakeFiles/MyRaylibGame.dir/Tools/quaternion.cpp.o: /home/alan/Documents/RayDron
 
 CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /home/alan/Documents/RayDrone/Objects/Drone/controller.h \
+  /home/alan/Documents/RayDrone/Objects/Drone/mahony.h \
   /home/alan/Documents/RayDrone/Objects/Drone/motors.h \
   /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.h \
   /home/alan/Documents/RayDrone/Objects/Drone/vIMU.h \
   /home/alan/Documents/RayDrone/Objects/GameObject.h \
+  /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.h \
   /home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.h \
   /home/alan/Documents/RayDrone/Objects/World/Gworld.h \
   /home/alan/Documents/RayDrone/Tools/InputSystem.h \
@@ -3392,11 +4133,13 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -3413,12 +4156,16 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
@@ -3430,6 +4177,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/parse_numbers.h \
@@ -3446,12 +4194,15 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
@@ -3462,6 +4213,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
@@ -3470,6 +4222,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
@@ -3477,15 +4230,18 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/clocale \
   /usr/include/c++/11/cmath \
+  /usr/include/c++/11/cstddef \
   /usr/include/c++/11/cstdint \
   /usr/include/c++/11/cstdio \
   /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cstring \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/cwchar \
   /usr/include/c++/11/cwctype \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
+  /usr/include/c++/11/execution \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/ext/atomicity.h \
@@ -3494,11 +4250,13 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
+  /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/memory \
@@ -3506,10 +4264,27 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/new \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/ostream \
+  /usr/include/c++/11/pstl/algorithm_fwd.h \
+  /usr/include/c++/11/pstl/algorithm_impl.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/pstl/execution_impl.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/pstl/glue_algorithm_impl.h \
+  /usr/include/c++/11/pstl/glue_execution_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/glue_memory_impl.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  /usr/include/c++/11/pstl/glue_numeric_impl.h \
+  /usr/include/c++/11/pstl/memory_impl.h \
+  /usr/include/c++/11/pstl/numeric_fwd.h \
+  /usr/include/c++/11/pstl/numeric_impl.h \
+  /usr/include/c++/11/pstl/parallel_backend.h \
+  /usr/include/c++/11/pstl/parallel_backend_serial.h \
+  /usr/include/c++/11/pstl/parallel_backend_utils.h \
+  /usr/include/c++/11/pstl/parallel_impl.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/pstl/unseq_backend_simd.h \
+  /usr/include/c++/11/pstl/utils.h \
   /usr/include/c++/11/random \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/sstream \
@@ -3535,6 +4310,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
@@ -3704,6 +4480,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
@@ -3754,15 +4531,23 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /home/alan/Documents/RayDrone/Objects/template_class.h:
 
+/usr/include/c++/11/pstl/numeric_impl.h:
+
+/usr/include/c++/11/pstl/glue_numeric_impl.h:
+
+/usr/include/c++/11/pstl/glue_memory_impl.h:
+
 /usr/include/c++/11/numeric:
+
+/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/random.h:
 
-/home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp:
+/home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.h:
+
+/home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.cpp:
 
 /home/alan/Documents/RayDrone/Objects/Drone/vIMU.cpp:
-
-/usr/include/c++/11/tuple:
 
 /usr/include/c++/11/sstream:
 
@@ -3772,19 +4557,9 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/ext/concurrence.h:
 
-/usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
 /usr/include/c++/11/bits/unique_ptr.h:
 
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
@@ -3802,13 +4577,15 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.cpp:
 
+/usr/include/c++/11/pstl/glue_algorithm_impl.h:
+
 /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp:
 
+/home/alan/Documents/RayDrone/Objects/VGamepad/VGamepad.cpp:
+
+/home/alan/Documents/RayDrone/Objects/Drone/mahony.cpp:
+
 /usr/local/include/raylib.h:
-
-/usr/include/c++/11/pstl/execution_defs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h:
 
@@ -3823,8 +4600,6 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h:
 
@@ -3902,6 +4677,8 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h:
 
+/usr/include/c++/11/pstl/parallel_backend_serial.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h:
@@ -3936,10 +4713,6 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
 
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /home/alan/Documents/RayDrone/Objects/Drone/quadcopter.h:
@@ -3952,19 +4725,35 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
-/usr/include/c++/11/exception:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+/usr/include/c++/11/chrono:
 
-/usr/include/c++/11/debug/assertions.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/c++/11/cstdio:
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/11/pstl/parallel_impl.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
 
@@ -3972,7 +4761,17 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/SDL2/SDL.h:
 
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
+
+/usr/include/wchar.h:
+
 /usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -3982,15 +4781,13 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/system_error:
 
-/usr/include/c++/11/ext/new_allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+/usr/include/SDL2/SDL_touch.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
-/usr/include/c++/11/ext/atomicity.h:
-
 /usr/include/c++/11/bits/stl_pair.h:
+
+/usr/include/c++/11/ext/atomicity.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
 
@@ -4004,35 +4801,29 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
-/usr/include/c++/11/bits/std_abs.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h:
 
-/home/alan/Documents/RayDrone/Objects/World/Gworld.h:
+/usr/include/c++/11/bits/refwrap.h:
 
-/usr/include/c++/11/ext/string_conversions.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/c++/11/bits/exception_ptr.h:
+/usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/c++/11/tr1/special_function_util.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/11/cstdint:
-
-/usr/include/SDL2/SDL_pixels.h:
-
 /usr/include/c++/11/clocale:
 
-/usr/include/c++/11/cwchar:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
 /usr/include/c++/11/bits/nested_exception.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
 /usr/include/c++/11/bits/move.h:
+
+/usr/include/c++/11/pstl/algorithm_impl.h:
+
+/usr/include/c++/11/cstddef:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
@@ -4042,7 +4833,15 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
 
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/cstdlib:
+
+/usr/include/SDL2/SDL_atomic.h:
+
 /usr/include/c++/11/bits/functional_hash.h:
+
+/usr/include/c++/11/pstl/utils.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h:
 
@@ -4058,11 +4857,9 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/bits/exception.h:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
-
-/usr/include/wchar.h:
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/c++/11/bits/std_thread.h:
 
@@ -4074,15 +4871,21 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/pthread.h:
 
+/usr/include/c++/11/bits/exception_ptr.h:
+
+/home/alan/Documents/RayDrone/Objects/World/Gworld.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/11/bits/concept_check.h:
 
+/usr/include/c++/11/execution:
+
 /usr/local/include/rcamera.h:
 
 /usr/include/c++/11/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /home/alan/Documents/RayDrone/Tools/MyVector.cpp:
 
@@ -4092,7 +4895,9 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/c++/11/ext/numeric_traits.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
 
 /usr/include/SDL2/SDL_stdinc.h:
 
@@ -4100,21 +4905,23 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/bits/basic_ios.h:
 
-/usr/include/c++/11/cmath:
+/usr/include/c++/11/bits/stl_tempbuf.h:
 
-/usr/include/c++/11/bits/allocator.h:
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/c++/11/pstl/execution_impl.h:
 
 /home/alan/Documents/RayDrone/Objects/Drone/motors.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+/usr/include/c++/11/backward/binders.h:
 
-/usr/include/c++/11/cctype:
+/usr/include/c++/11/algorithm:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/SDL2/SDL_system.h:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h:
 
@@ -4122,25 +4929,25 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/SDL2/SDL_log.h:
 
+/usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/SDL2/SDL_config.h:
+
 /usr/include/SDL2/SDL_messagebox.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h:
 
 /usr/include/SDL2/SDL_loadso.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/c++/11/cwchar:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/SDL2/SDL_keyboard.h:
 
 /usr/include/SDL2/SDL_joystick.h:
-
-/usr/include/SDL2/SDL_touch.h:
 
 /usr/include/c++/11/bits/sstream.tcc:
 
@@ -4160,21 +4967,29 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/c++/11/bits/streambuf_iterator.h:
-
-/usr/include/SDL2/SDL_config.h:
+/usr/include/SDL2/SDL_gamecontroller.h:
 
 /usr/include/SDL2/SDL_cpuinfo.h:
+
+/usr/include/SDL2/SDL_pixels.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/11/cstdint:
 
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
+/usr/include/c++/11/pstl/numeric_fwd.h:
+
+/usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
@@ -4188,6 +5003,10 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/bits/specfun.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/SDL2/SDL_misc.h:
+
 /usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
@@ -4199,6 +5018,14 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /usr/include/stdlib.h:
 
 /usr/include/SDL2/SDL_haptic.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/11/pstl/algorithm_fwd.h:
 
 /usr/include/c++/11/bits/localefwd.h:
 
@@ -4212,11 +5039,11 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/SDL2/SDL_video.h:
 
+/usr/include/c++/11/iterator:
+
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /home/alan/Documents/RayDrone/Objects/template_class.cpp:
 
@@ -4232,6 +5059,14 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/SDL2/SDL_endian.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+
+/usr/include/SDL2/SDL_main.h:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
@@ -4241,10 +5076,6 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /home/alan/Documents/RayDrone/Tools/quaternion.h:
 
 /usr/include/SDL2/SDL_audio.h:
-
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
 
 /usr/include/SDL2/SDL_metal.h:
 
@@ -4262,13 +5093,19 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/SDL2/SDL_mutex.h:
 
+/usr/include/c++/11/bits/stl_algo.h:
+
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
+/usr/include/c++/11/bits/node_handle.h:
+
 /usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/c++/11/pstl/parallel_backend_utils.h:
 
 /usr/include/SDL2/SDL_filesystem.h:
 
@@ -4280,10 +5117,6 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/SDL2/SDL_platform.h:
 
-/usr/include/SDL2/SDL_gamecontroller.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
 /usr/include/c++/11/bits/invoke.h:
 
 /usr/include/SDL2/SDL_keycode.h:
@@ -4292,13 +5125,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
 /usr/include/SDL2/SDL_render.h:
-
-/usr/include/c++/11/cstdlib:
-
-/usr/include/SDL2/SDL_atomic.h:
 
 /usr/include/SDL2/SDL_quit.h:
 
@@ -4307,6 +5134,8 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/SDL2/SDL_rwops.h:
+
+/usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/SDL2/SDL_scancode.h:
 
@@ -4326,19 +5155,15 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/SDL2/close_code.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
 
-/usr/include/c++/11/iosfwd:
+/usr/include/SDL2/SDL_system.h:
 
-/usr/include/c++/11/initializer_list:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
 
-/usr/include/c++/11/bits/predefined_ops.h:
+/usr/include/c++/11/cctype:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/SDL2/SDL_version.h:
-
-/usr/include/SDL2/begin_code.h:
+/usr/include/c++/11/unordered_map:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -4346,9 +5171,59 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/alloca.h:
 
-/usr/include/c++/11/cwctype:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/asm-generic/errno.h:
 
 /usr/include/c++/11/tr1/ell_integral.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/SDL2/SDL_timer.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
+
+/usr/include/c++/11/iosfwd:
+
+/usr/include/c++/11/initializer_list:
+
+/usr/include/SDL2/begin_code.h:
+
+/usr/include/SDL2/SDL_version.h:
+
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/allocator.h:
+
+/usr/include/c++/11/cmath:
+
+/usr/include/c++/11/cstdio:
+
+/usr/include/c++/11/cwctype:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
+
+/usr/include/c++/11/exception:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
+
+/usr/include/c++/11/ext/new_allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h:
+
+/usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -4358,11 +5233,17 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/math.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
 /usr/local/include/raymath.h:
 
 /usr/include/c++/11/ostream:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/stdexcept:
 
@@ -4386,7 +5267,13 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
+/usr/include/c++/11/pstl/parallel_backend.h:
+
+/usr/include/c++/11/pstl/glue_execution_defs.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/11/tuple:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h:
 
@@ -4394,13 +5281,25 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/c++/11/type_traits:
 
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/c++/11/typeinfo:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/include/c++/11/ios:
+
+/usr/include/c++/11/utility:
+
+/usr/include/errno.h:
+
 /usr/include/c++/11/vector:
+
+/usr/include/c++/11/pstl/unseq_backend_simd.h:
 
 /usr/include/SDL2/SDL_gesture.h:
 
 /usr/include/ctype.h:
-
-/usr/include/errno.h:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -4410,7 +5309,11 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/inttypes.h:
 
+/usr/include/c++/11/functional:
+
 /usr/include/linux/errno.h:
+
+/usr/include/c++/11/cstring:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -4422,6 +5325,8 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h:
 
+/usr/include/c++/11/bits/erase_if.h:
+
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/endian.h:
@@ -4429,6 +5334,8 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /usr/include/stdint.h:
 
 /usr/include/stdio.h:
+
+/usr/include/c++/11/pstl/memory_impl.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -4444,23 +5351,15 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/SDL2/SDL_main.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -4469,6 +5368,8 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/home/alan/Documents/RayDrone/Objects/Drone/mahony.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -4502,6 +5403,10 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
@@ -4511,10 +5416,6 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 /usr/include/c++/11/bits/random.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/SDL2/SDL_timer.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /home/alan/Documents/RayDrone/Objects/World/Gworld.cpp:
 
@@ -4526,58 +5427,14 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: /home/alan/Documents/RayDrone/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/c++/11/typeinfo:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/11/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/c++/11/chrono:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/SDL2/SDL_misc.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/utility:
-
-/usr/include/c++/11/ios:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:

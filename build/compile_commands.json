@@ -43,6 +43,12 @@
 },
 {
   "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o -c /home/alan/Documents/RayDrone/Objects/Drone/mahony.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/Drone/mahony.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/Drone/mahony.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
   "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o -c /home/alan/Documents/RayDrone/Objects/Drone/motors.cpp",
   "file": "/home/alan/Documents/RayDrone/Objects/Drone/motors.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Objects/Drone/motors.cpp.o"
@@ -58,6 +64,12 @@
   "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o -c /home/alan/Documents/RayDrone/Objects/Drone/vIMU.cpp",
   "file": "/home/alan/Documents/RayDrone/Objects/Drone/vIMU.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o -c /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o"
 },
 {
   "directory": "/home/alan/Documents/RayDrone/build",

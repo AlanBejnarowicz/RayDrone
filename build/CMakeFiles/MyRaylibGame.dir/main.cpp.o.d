@@ -215,6 +215,7 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -315,6 +316,18 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
  /home/alan/Documents/RayDrone/Tools/quaternion.h \
  /home/alan/Documents/RayDrone/Tools/MyVector.h \
@@ -330,11 +343,31 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: \
  /home/alan/Documents/RayDrone/Objects/Drone/motors.h \
  /home/alan/Documents/RayDrone/Objects/Drone/vIMU.h \
  /home/alan/Documents/RayDrone/Objects/Drone/controller.h \
+ /home/alan/Documents/RayDrone/Objects/Drone/mahony.h \
  /home/alan/Documents/RayDrone/Objects/World/Gworld.h \
  /usr/local/include/rlgl.h /usr/include/c++/11/random \
  /usr/include/c++/11/bits/random.h \
- /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
- /usr/include/c++/11/pstl/glue_numeric_defs.h
+ /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/c++/11/cstring \
+ /usr/include/c++/11/execution \
+ /usr/include/c++/11/pstl/glue_execution_defs.h \
+ /usr/include/c++/11/pstl/algorithm_impl.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/pstl/execution_impl.h \
+ /usr/include/c++/11/pstl/memory_impl.h \
+ /usr/include/c++/11/pstl/unseq_backend_simd.h \
+ /usr/include/c++/11/pstl/utils.h \
+ /usr/include/c++/11/pstl/parallel_backend_utils.h \
+ /usr/include/c++/11/pstl/parallel_backend.h \
+ /usr/include/c++/11/pstl/parallel_backend_serial.h \
+ /usr/include/c++/11/cstddef /usr/include/c++/11/pstl/parallel_impl.h \
+ /usr/include/c++/11/pstl/numeric_impl.h \
+ /usr/include/c++/11/pstl/pstl_config.h \
+ /usr/include/c++/11/pstl/algorithm_fwd.h \
+ /usr/include/c++/11/pstl/glue_algorithm_impl.h \
+ /usr/include/c++/11/pstl/numeric_fwd.h \
+ /usr/include/c++/11/pstl/glue_numeric_impl.h \
+ /usr/include/c++/11/pstl/glue_memory_impl.h \
+ /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.h

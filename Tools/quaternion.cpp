@@ -7,15 +7,48 @@ namespace Tools {
     // ############################################################
     // ##################   QUATERNION   ##########################
 
-
-
-
     Quaternion::Quaternion(double x, double y, double z, double w){
         this->w = w;
         this->x = x;
         this->y = y;
         this->z = z;
     }
+
+    // Init Quaternion with Euler Angles
+    Quaternion::Quaternion(double yaw, double pitch, double roll){
+
+        // Half angles
+        double hy = 0.5 * yaw;
+        double hp = 0.5 * pitch;
+        double hr = 0.5 * roll;
+
+        // Precompute sines/cosines
+        double cy = std::cos(hy);
+        double sy = std::sin(hy);
+        double cp = std::cos(hp);
+        double sp = std::sin(hp);
+        double cr = std::cos(hr);
+        double sr = std::sin(hr);
+
+        // Z-Y-X: q = qz * qy * qx
+
+        this->w = cy*cp*cr + sy*sp*sr;
+        this->x = cy*cp*sr - sy*sp*cr;
+        this->y = sy*cp*sr + cy*sp*cr;
+        this->z = sy*cp*cr - cy*sp*sr;
+
+        // normalize quaternion
+        double mag = std::sqrt(w * w + x * x + y * y + z * z);
+        if (mag > 1e-10) {  // Small threshold to prevent division by zero
+            this->x = this->x / mag;
+            this->y = this->y / mag;
+            this->z = this->z / mag;
+            this->w = this->w / mag;
+        }
+
+
+    }
+
 
     Quaternion::Quaternion(void)
     {
@@ -105,6 +138,50 @@ namespace Tools {
         r.m15 = 1;
 
         return r;
+    }
+
+
+
+    AxisAngle Quaternion::ToAxisAngle() const {
+        float outAngle;
+        Vector3 outAxis;
+    
+        // Clamp w to avoid NaN due to floating-point errors
+        double clampedW = std::clamp(w, -1.0, 1.0);
+    
+        // If w is exactly 1 or -1, the quaternion is an identity rotation
+        if (std::abs(clampedW) >= 1.0 - 1e-6) {
+            outAngle = 0.0; // No rotation
+            outAxis = {1.0, 0.0, 0.0}; // Default axis (arbitrary)
+        } else {
+            // Normal case: compute angle and axis
+            outAngle = static_cast<float>(2.0 * std::acos(clampedW));
+            double s = std::sqrt(1.0 - clampedW * clampedW);
+    
+            // Avoid division by near-zero
+            if (s < 1e-6) {
+                outAxis = {1.0, 0.0, 0.0}; // Fallback axis
+            } else {
+                outAxis.x = static_cast<float>(x / s);
+                outAxis.y = static_cast<float>(y / s);
+                outAxis.z = static_cast<float>(z / s);
+            }
+        }
+    
+        AxisAngle axa;
+        axa.angle = outAngle;
+        axa.axis = outAxis;
+    
+        return axa;
+    }
+
+
+    Vector3 Quaternion::ToEuler () const {
+        Vector3 euler;
+        euler.x = atan2(2*(w*x + y*z), 1-2*(x*x + y*y));
+        euler.y = asin(2*(w*y - z*x));
+        euler.z = atan2(2*(w*z + x*y), 1-2*(y*y + z*z));
+        return euler;
     }
 
 
