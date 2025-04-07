@@ -69,10 +69,10 @@ void transpose_matrix(float *matrix , float *transposed_matrix){
 }
 
 
-void matrix_multiply(float a[9], Tools::Vector3 b[3], Tools::Vector3 result) {
-    result.x = a[0]*b->x + a[1]*b->y + a[2]*b->z;
-    result.y = a[3]*b->x + a[4]*b->y + a[5]*b->z;
-    result.z = a[6]*b->x + a[7]*b->y + a[8]*b->z;
+void matrix_multiply(const float a[9], const Tools::Vector3 &b, Tools::Vector3 &result) {
+    result.x = a[0] * b.x + a[1] * b.y + a[2] * b.z;
+    result.y = a[3] * b.x + a[4] * b.y + a[5] * b.z;
+    result.z = a[6] * b.x + a[7] * b.y + a[8] * b.z;
 }
 
 
@@ -105,16 +105,14 @@ Tools::Quaternion Mahony::perform_mahony_fusion_6DOF(Tools::Vector3 accel, Tools
     float a_norm = sqrt(pow(acc.x,2)+pow(acc.y,2)+pow(acc.z,2));
     float m_norm = sqrt(pow(mag.x,2)+pow(mag.y,2)+pow(mag.z,2));
 
-    if ((a_norm > 0) && (m_norm > 0))
+    if ((a_norm > 0))
     {
         // accelerometer part
         Tools::Vector3 a = accel.normalize();
-        matrix_multiply(dcm_transposed, &g, v_g);
+        matrix_multiply(dcm_transposed, g, v_g);
         
         //matrix_cross_product(a.arr, v_g, &acc_error);
-        acc_error = a.cross(v_g);
-
-
+        acc_error = v_g.cross(a);
         
         // magnetometer part
         // Tools::Vector3 m = normalize_vector(magn);
@@ -148,10 +146,14 @@ Tools::Quaternion Mahony::perform_mahony_fusion_6DOF(Tools::Vector3 accel, Tools
         gyr.z = gyr.z + gyro_bias.z + kp * total_error.z; // gyroscope correction
         gx = gyr.x, gy = gyr.y, gz = gyr.z;
 
+
+        //std::cout << "Acc Error: " << acc_error << " | Gyro Bias: " << gyro_bias << std::endl;
+
+
     }
 
     //origin_q << 0, gx, gy, gz; // the current reading of gyroscope in quaternion form
-    Tools::Quaternion origin_q = {{0, gx, gy, gz}};
+    Tools::Quaternion origin_q = {{gx, gy, gz, 0}};
 
     //quat_diff = quat_multi(this->est_quat, origin_q);
     Tools::Quaternion quat_diff = {{0, 0, 0, 0}};

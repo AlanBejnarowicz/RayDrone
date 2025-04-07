@@ -370,4 +370,5 @@ CMakeFiles/MyRaylibGame.dir/main.cpp.o: \
  /usr/include/c++/11/pstl/numeric_fwd.h \
  /usr/include/c++/11/pstl/glue_numeric_impl.h \
  /usr/include/c++/11/pstl/glue_memory_impl.h \
- /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.h
+ /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.h \
+ /home/alan/Documents/RayDrone/Objects/HUD/HUD.h

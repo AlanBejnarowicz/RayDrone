@@ -143,7 +143,31 @@ void Quadcopter::Update(float dt) {
     
     apply_deadband();
 
-    #ifndef TRAJECTORY_CONTROL
+    
+
+    #ifndef QUATERNION_CONTROLLER
+
+
+        Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
+
+        std::cout << "  Controller " << std::endl << std::endl;
+
+        //std::cout << "Local Omega: " << localOmega << std::endl;
+        //std::cout << "Local Acc: " << localAcc << "    magnitude: "<<localAcc.magnitude() << std::endl;
+
+        //est_rot = mahony_filter.perform_mahony_fusion_6DOF(localAcc, localOmega, est_rot, dt);
+        std::cout << "True Rotation est Eulers: " <<rotation.ToEuler() * 180 / PI << std::endl;
+
+        Tools::Vector3 PID_out = PID.RatePID(gm_input_deadband, localOmega, dt);
+
+        gm_input_deadband.pitch = PID_out.x;
+        gm_input_deadband.yaw = PID_out.y;
+        gm_input_deadband.roll = PID_out.z;
+
+
+        Q4Motors.UpdateMotors(gm_input_deadband);
+
+    #else
 
         Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
         Tools::Vector3 localAcc = virtualIMU.SimulateAccelerometer(rotation, velocity, dt);
@@ -151,41 +175,37 @@ void Quadcopter::Update(float dt) {
         //std::cout << "Local Omega: " << localOmega << std::endl;
         //std::cout << "Local Acc: " << localAcc << "    magnitude: "<<localAcc.magnitude() << std::endl;
 
-        est_rot = mahony_filter.perform_mahony_fusion_6DOF(localAcc, localOmega, est_rot, dt);
-        std::cout << "Mahony est Eulers: " <<est_rot.ToEuler() * 180 / PI << std::endl;
+        //est_rot = mahony_filter.perform_mahony_fusion_6DOF(localAcc, localOmega, est_rot, dt);
+        std::cout << "True Rotation est Eulers: " <<rotation.ToEuler() * 180 / PI << std::endl;
 
-        // Tools::Vector3 PID_out = PID.RatePID(gm_input_deadband, localOmega, dt);
+        double ref_pitch = gm_input_deadband.pitch * 2;
+        double ref_yaw   = gm_input_deadband.yaw;
+        double ref_roll  = gm_input_deadband.roll * 2;
+        
+        //Tools::Quaternion q_ref(-ref_roll, ref_yaw, -ref_pitch); 
 
-        // gm_input_deadband.pitch = PID_out.x;
-        // gm_input_deadband.yaw = PID_out.z;
-        // gm_input_deadband.roll = PID_out.y;
+        // Convert gamepad angles to a local offset quaternion:
+        Tools::Quaternion q_offset(-ref_roll, ref_yaw, -ref_pitch);  
 
-        double ref_pitch = gm_input_deadband.pitch;
-        double ref_yaw = gm_input_deadband.yaw;
-        double ref_roll = gm_input_deadband.roll;
+        // Compose the new reference orientation via multiplication (not addition):
+        Tools::Quaternion q_ref = rotation * q_offset;  
 
+        // gamepad_ref_angles.x = -ref_roll;
+        // gamepad_ref_angles.y += -ref_yaw;
+        // gamepad_ref_angles.z = -ref_pitch;
 
-        Tools::Quaternion q_ref(ref_pitch, ref_yaw, ref_roll);
-        std::cout <<"Qref: " << q_ref.ToEuler() * 180 / PI << std::endl;
+        //Tools::Quaternion q_ref(gamepad_ref_angles.x, gamepad_ref_angles.y, gamepad_ref_angles.z); 
 
-        Tools::Vector3 QCntrl_Out = QCntrl.QControllerUpdate(q_ref, est_rot, localOmega, dt);
+        std::cout <<"Qref: " << q_ref << std::endl;
+
+        Tools::Vector3 QCntrl_Out = QCntrl.QControllerUpdate(q_ref, rotation, localOmega, dt);
 
         std::cout <<"Quaternion Controller Out: " << QCntrl_Out << std::endl;
 
+
         gm_input_deadband.pitch = QCntrl_Out.x;
-        gm_input_deadband.yaw = 0;
-        gm_input_deadband.roll = 0;
-
-        Q4Motors.UpdateMotors(gm_input_deadband);
-
-    #else
-
-        Tools::Vector3 localOmega = virtualIMU.SimulateGyro(rotation, dt);
-        std::cout << "Local Omega: " << localOmega << std::endl;
-
-        gm_input_deadband.pitch = 0.2;
-        gm_input_deadband.yaw = 0;
-        gm_input_deadband.roll = 0;
+        gm_input_deadband.yaw = QCntrl_Out.y;
+        gm_input_deadband.roll = QCntrl_Out.z;
 
         Q4Motors.UpdateMotors(gm_input_deadband);
 
@@ -193,10 +213,15 @@ void Quadcopter::Update(float dt) {
 
     UpdateDronePhysics(dt);
 
-    if(position.y <= 0){
-        position.y = 0;
+    if(position.y <= 1){
+        position.y = 1;
         velocity.y = 0;
     }
+
+
+    // position.x = 0;
+    // position.y = 5;
+    // position.z = 0;
 
 
 }
@@ -235,7 +260,8 @@ void Quadcopter::Draw2D() {
 
     float HUD_y = GetScreenHeight() - 50;
     
-    DrawText(("Velocity: " + std::to_string(velocity.magnitude())).c_str(), 10, HUD_y, 40, GREEN);
+    DrawText(("Velocity: " + std::to_string(velocity.magnitude())).c_str(), 10, HUD_y, 25, GREEN);
+    DrawText(("Attitude: " + std::to_string(position.y )).c_str(), 10, HUD_y - 25, 25, GREEN);
 
   
 

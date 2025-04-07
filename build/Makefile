@@ -273,6 +273,30 @@ Objects/GameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.s
 .PHONY : Objects/GameObject.cpp.s
 
+Objects/HUD/HUD.o: Objects/HUD/HUD.cpp.o
+.PHONY : Objects/HUD/HUD.o
+
+# target to build an object file
+Objects/HUD/HUD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/HUD/HUD.cpp.o
+.PHONY : Objects/HUD/HUD.cpp.o
+
+Objects/HUD/HUD.i: Objects/HUD/HUD.cpp.i
+.PHONY : Objects/HUD/HUD.i
+
+# target to preprocess a source file
+Objects/HUD/HUD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/HUD/HUD.cpp.i
+.PHONY : Objects/HUD/HUD.cpp.i
+
+Objects/HUD/HUD.s: Objects/HUD/HUD.cpp.s
+.PHONY : Objects/HUD/HUD.s
+
+# target to generate assembly for a file
+Objects/HUD/HUD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyRaylibGame.dir/build.make CMakeFiles/MyRaylibGame.dir/Objects/HUD/HUD.cpp.s
+.PHONY : Objects/HUD/HUD.cpp.s
+
 Objects/MainCamera/main_camera.o: Objects/MainCamera/main_camera.cpp.o
 .PHONY : Objects/MainCamera/main_camera.o
 
@@ -492,6 +516,9 @@ help:
 	@echo "... Objects/GameObject.o"
 	@echo "... Objects/GameObject.i"
 	@echo "... Objects/GameObject.s"
+	@echo "... Objects/HUD/HUD.o"
+	@echo "... Objects/HUD/HUD.i"
+	@echo "... Objects/HUD/HUD.s"
 	@echo "... Objects/MainCamera/main_camera.o"
 	@echo "... Objects/MainCamera/main_camera.i"
 	@echo "... Objects/MainCamera/main_camera.s"

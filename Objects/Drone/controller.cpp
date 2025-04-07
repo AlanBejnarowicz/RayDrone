@@ -87,34 +87,31 @@ QuaternionController::~QuaternionController(){
 }
 
 
-Tools::Vector3 QuaternionController::QControllerUpdate(Tools::Quaternion q_ref, Tools::Quaternion rotation, Tools::Vector3 omega, float dT){
+Tools::Vector3 QuaternionController::QControllerUpdate(Tools::Quaternion q_ref, Tools::Quaternion rotation, Tools::Vector3 omega, float dT) {
 
-    // 1. Calculate error quaternion q_err = q_ref * conj(q_meas)
-    Tools::Quaternion q_err = q_ref * rotation.conjugate();
+    Tools::Vector3 tr_omega(omega.x, omega.y, omega.z);
+
+    //std::cout << "Rotation: " << rotation << std::endl;
+
+    // 1. Compute error in BODY frame (conj(q_meas) * q_ref)
+    Tools::Quaternion q_err = rotation.conjugate() * q_ref;
+
     q_err = q_err.normalize();
 
-    // 2. Convert to axis-angle
-    Tools::AxisAngle q_axag;
-    q_axag = q_err.ToAxisAngle();
-    Tools::Vector3 axis = q_axag.axis;
+    Tools::AxisAngle err = q_err.ToAxisAngle();  // yields axis=(ex,ey,ez), angle=theta
+    float theta = err.a;
 
-    std::cout << "Axis: " << axis << "   Angle: " << q_axag.angle << std::endl;
+    // If axis is not normalized inside .ToAxisAngle(), then normalize it here.
+    Tools::Vector3 axis(-err.x, -err.y, err.z);
+    
+    
+    // PD torque in body frame:
+    Tools::Vector3 tau_p = axis * (-Kp * theta );
+    Tools::Vector3 tau_d = omega * -Kd; 
+    Tools::Vector3 tau   = tau_p + tau_d;
 
-    // // 3. Proportional torque: -Kp * angle * axis
-    // //    negative sign => if angle>0, we want to push back
-    // Tools::Vector3 axis = q_axag.axis;
-    // Tools::Vector3 tau_p = axis * (-Kp * q_axag.angle);
-
-    // // 4. Derivative torque for rate damping: -Kd * omega_meas
-    // Tools:: Vector3 tau_d = omega * (-Kd);
-
-    // // net torque
-    // Tools::Vector3 tau = tau_p + tau_d;
-
-
-    Tools::Vector3 tau;
+    std::cout << "      TauP: " << tau_p << std::endl;
+    std::cout << "      TauD: " << tau_d << std::endl;
 
     return tau;
-
-
 }

@@ -57,8 +57,8 @@ class QuaternionController {
 
     public:
 
-        double Kp = 1.0;                   // proportional gain
-        double Kd = 0.1;                   // derivative (rate) gain
+        double Kp = 0.4;                   // proportional gain
+        double Kd = 0.2;                   // derivative (rate) gain
 
         QuaternionController();
         ~QuaternionController();

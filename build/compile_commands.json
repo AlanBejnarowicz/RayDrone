@@ -67,6 +67,12 @@
 },
 {
   "directory": "/home/alan/Documents/RayDrone/build",
+  "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/HUD/HUD.cpp.o -c /home/alan/Documents/RayDrone/Objects/HUD/HUD.cpp",
+  "file": "/home/alan/Documents/RayDrone/Objects/HUD/HUD.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/Objects/HUD/HUD.cpp.o"
+},
+{
+  "directory": "/home/alan/Documents/RayDrone/build",
   "command": "/usr/bin/c++  -I/home/alan/Documents/RayDrone/Tools -I/home/alan/Documents/RayDrone/Objects -I/usr/include/SDL2 -g -std=gnu++17 -I/usr/local/include -o CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o -c /home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.cpp",
   "file": "/home/alan/Documents/RayDrone/Objects/MainCamera/main_camera.cpp",
   "output": "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o"

@@ -26,7 +26,7 @@ void Motors::UpdateMotors(Tools::GM_Inputs input){
 
 
     // apply mixer
-    Q4Mixer(input.pitch, input.yaw, input.roll, input.throttle);
+    Q4Mixer(input.pitch, input.roll, input.yaw, input.throttle);
 
     // simulate motors with alpha-beta filter
     for(int i = 0; i <4; i++){

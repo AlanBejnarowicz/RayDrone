@@ -45,6 +45,8 @@ namespace Tools {
         float rightTrigger = SDL_GameControllerGetAxis(Vgamepad, SDL_CONTROLLER_AXIS_TRIGGERRIGHT) / 32767.0f;
 
 
+        // std::cout << "          rightTrigger: " << rightTrigger << std::endl;
+
 
         // std::cout << "Left Stick X: " << leftStickX << std::endl;
         // std::cout << "Left Stick Y: " << leftStickY << std::endl;
@@ -53,10 +55,14 @@ namespace Tools {
         // std::cout << "Left Trigger: " << leftTrigger << std::endl;
         // std::cout << "Right Trigger: " << rightTrigger << std::endl;
 
+
+        
+
         gm_inputs.throttle = leftTrigger;
         gm_inputs.yaw = rightStickX;
         gm_inputs.pitch = leftStickY;
         gm_inputs.roll = leftStickX;
+        gm_inputs.bt_1 = rightTrigger;
 
         // std::cout << "Throttle: " << gm_inputs.throttle << std::endl;
         // std::cout << "Yaw: " << gm_inputs.yaw << std::endl;

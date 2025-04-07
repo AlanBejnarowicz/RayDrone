@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyRaylibGame.dir/Objects/Drone/vIMU.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/GameObject.cpp.o.d"
+  "CMakeFiles/MyRaylibGame.dir/Objects/HUD/HUD.cpp.o"
+  "CMakeFiles/MyRaylibGame.dir/Objects/HUD/HUD.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o"
   "CMakeFiles/MyRaylibGame.dir/Objects/MainCamera/main_camera.cpp.o.d"
   "CMakeFiles/MyRaylibGame.dir/Objects/VGamepad/VGamepad.cpp.o"

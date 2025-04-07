@@ -3,7 +3,6 @@
 namespace Tools {
 
 
-
     // ############################################################
     // ##################   QUATERNION   ##########################
 
@@ -40,6 +39,7 @@ namespace Tools {
         // normalize quaternion
         double mag = std::sqrt(w * w + x * x + y * y + z * z);
         if (mag > 1e-10) {  // Small threshold to prevent division by zero
+
             this->x = this->x / mag;
             this->y = this->y / mag;
             this->z = this->z / mag;
@@ -142,12 +142,16 @@ namespace Tools {
 
 
 
+
+
     AxisAngle Quaternion::ToAxisAngle() const {
+
         float outAngle;
-        Vector3 outAxis;
+        Tools::Vector3 outAxis;
     
-        // Clamp w to avoid NaN due to floating-point errors
-        double clampedW = std::clamp(w, -1.0, 1.0);
+        // Ensure quaternion is normalized (safety check)
+        Tools::Quaternion q = this->normalize();
+        double clampedW = std::clamp(static_cast<double>(q.w), -1.0, 1.0);
     
         // If w is exactly 1 or -1, the quaternion is an identity rotation
         if (std::abs(clampedW) >= 1.0 - 1e-6) {
@@ -167,13 +171,24 @@ namespace Tools {
                 outAxis.z = static_cast<float>(z / s);
             }
         }
-    
-        AxisAngle axa;
-        axa.angle = outAngle;
-        axa.axis = outAxis;
-    
-        return axa;
+
+
+
+        std::cout << "ToAxisAngle Vector: " << outAxis << "   Angle: " << outAngle << std::endl;
+        AxisAngle ax;
+
+        ax.x = outAxis.x;
+        ax.y = outAxis.y;
+        ax.z = outAxis.z;
+
+        ax.a = outAngle;
+
+        return ax;
     }
+
+
+
+
 
 
     Vector3 Quaternion::ToEuler () const {

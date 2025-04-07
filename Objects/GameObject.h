@@ -6,6 +6,8 @@
 #include <vector>
 #include <memory>
 #include <raylib.h>
+#include <string>
+
 
 #include "MyVector.h"
 #include "quaternion.h"
@@ -22,6 +24,9 @@ class GameObject {
 
         Tools::Vector3 position;
         Tools::Quaternion rotation;
+
+        std::string name = "NewGameObject";
+        
 };
 
 

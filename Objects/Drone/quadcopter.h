@@ -24,7 +24,7 @@
 #include "mahony.h"
 
 
-//#define TRAJECTORY_CONTROL
+#define QUATERNION_CONTROLLER
 
 
 class Quadcopter : public GameObject {
@@ -52,7 +52,6 @@ class Quadcopter : public GameObject {
     void UpdateDronePhysics(float dT);
     void DrawDrone3D (Tools::Vector3 pos, Tools::Quaternion rotation, Tools::Vector3 size);
 
-
     //3D model
     Mesh droneMesh;
 
@@ -72,7 +71,7 @@ class Quadcopter : public GameObject {
     Tools::Vector3 last_possition;
 
     Tools::Quaternion est_rot;
-
+    Tools::Vector3 gamepad_ref_angles;
 
 
     Quadcopter(); // default constructor

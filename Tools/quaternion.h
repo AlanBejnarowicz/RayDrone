@@ -12,15 +12,15 @@
 
 namespace Tools {
 
-
-// axis angle struct
-struct AxisAngle
-{
-    float angle = 0;
-    Vector3 axis;
-};
-
 class Vector3;
+
+
+struct AxisAngle {
+    double x;
+    double y;
+    double z;
+    double a;
+};
 
 class Quaternion {
 

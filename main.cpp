@@ -28,6 +28,7 @@
 #include "Objects/Drone/quadcopter.h"
 #include "Objects/World/Gworld.h"
 #include "MainCamera/main_camera.h"
+#include "Objects/HUD/HUD.h"
 
 
 // main collection of GameObjects
@@ -69,6 +70,7 @@ int main() {
 
     gameObjects.push_back(std::make_unique<VGamepad>(GMInputs));
     gameObjects.push_back(std::make_unique<Quadcopter>(GMInputs));
+    gameObjects.push_back(std::make_unique<HUD>(gameObjects[1].get()));
     //gameObjects.push_back(std::make_unique<GameWorld>());
 
     MainCamera mainCamera(gameObjects[1].get());
@@ -93,11 +95,14 @@ int main() {
         BeginDrawing();
 
 
-        ClearBackground(RAYWHITE);
+        //ClearBackground(RAYWHITE);
+        ClearBackground(GRAY);
+
+        
         BeginMode3D(mainCamera.camera);
 
 
-        DrawGrid(500, 0.25f);
+        DrawGrid(5000, 1.25f);
 
         for (auto& obj : gameObjects) {
             obj->Draw();
